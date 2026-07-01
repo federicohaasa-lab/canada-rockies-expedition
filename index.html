@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Canadian Rockies Expedition — dashboard interactivo del viaje: Calgary, Jasper y Banff por la Icefields Parkway." />
+<meta name="theme-color" content="#0a1622" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Canadian Rockies Expedition · Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;650;700;750&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/vendor/leaflet.css" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔️</text></svg>" />
+</head>
+<body>
+
+<!-- ======================= NAV ======================= -->
+<header class="nav" id="nav">
+  <div class="container">
+    <a class="brand" href="#inicio">
+      <span class="glyph">🏔️</span>
+      <span><b>Rockies Expedition</b><small>Alberta · Canadá</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#resumen">Resumen</a>
+      <a href="#mapa">Mapa</a>
+      <a href="#timeline">Ruta</a>
+      <a href="#dias">Días</a>
+      <a href="#atracciones">Atracciones</a>
+      <a href="#videos">Videos</a>
+      <a href="#guia">Guía</a>
+      <a class="nav-cta" href="pdf.html" target="_blank">PDF ↗</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú" aria-expanded="false" aria-controls="navLinks">☰</button>
+  </div>
+</header>
+
+<!-- ======================= HERO ======================= -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"><img id="heroImg" src="assets/img/photos/hero_1.jpg" alt="Canadian Rockies" /></div>
+  <div class="hero-inner container">
+    <span class="eyebrow">Expedición privada · Rocosas Canadienses</span>
+    <h1 id="heroTitle">Canadian Rockies Expedition</h1>
+    <p class="sub" id="heroSub"></p>
+    <div class="dates" id="heroDates"></div>
+    <div class="hero-crew" id="heroCrew"></div>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#timeline">Comenzar el viaje →</a>
+      <a class="btn btn-ghost" href="#mapa">Ver el mapa</a>
+    </div>
+    <div class="hero-meta" id="heroMeta"></div>
+  </div>
+  <a class="scroll-cue" href="#resumen">Desliza<span></span></a>
+</section>
+
+<main>
+<!-- ======================= RESUMEN ======================= -->
+<section class="section aurora" id="resumen">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Resumen ejecutivo</span>
+      <h2>Ocho días, tres parques, un solo horizonte de montaña.</h2>
+      <p class="lead">El viaje de un vistazo: distancias, tiempos y los grandes números de una expedición por las Rocosas canadienses.</p>
+    </div>
+    <div class="stats-grid" id="statsGrid"></div>
+  </div>
+</section>
+
+<!-- ======================= MAPA ======================= -->
+<section class="section tint" id="mapa">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Mapa interactivo</span>
+      <h2>La ruta completa, día por día.</h2>
+      <p class="lead">Calgary → Banff → Icefields Parkway → Jasper → Mount Robson → Banff → Calgary. Filtra por día y toca cada punto para ver su ficha.</p>
+    </div>
+    <div class="map-controls reveal" id="dayChips"></div>
+    <div class="map-wrap reveal">
+      <div id="map"></div>
+      <div class="map-legend" id="mapLegend"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= TIMELINE ======================= -->
+<section class="section dark" id="timeline">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Timeline del viaje</span>
+      <h2>La expedición, jornada a jornada.</h2>
+      <p class="lead">Una línea de tiempo con la ruta, los trekkings y los tiempos de conducción de cada día.</p>
+    </div>
+    <div class="timeline" id="timelineList"></div>
+  </div>
+</section>
+
+<!-- ======================= DÍAS ======================= -->
+<section class="section aurora" id="dias">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Vista detallada por día</span>
+      <h2>Cada día, en profundidad.</h2>
+      <p class="lead">Horarios sugeridos, comida, logística, fotografía, clima, ropa y alertas. Toca un día para desplegarlo.</p>
+    </div>
+    <div class="days-list" id="daysList"></div>
+  </div>
+</section>
+
+<!-- ======================= ATRACCIONES ======================= -->
+<section class="section tint" id="atracciones">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Atracciones principales</span>
+      <h2>Los lugares que definen el viaje.</h2>
+      <p class="lead">Lagos glaciares, cascadas, campos de hielo y los grandes trekkings. Toca una tarjeta para ver fotos, tips y coordenadas.</p>
+    </div>
+    <div class="attr-grid" id="attrGrid"></div>
+  </div>
+</section>
+
+<!-- ======================= VIDEOS ======================= -->
+<section class="section dark" id="videos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Videos curados</span>
+      <h2>Míralo antes de vivirlo.</h2>
+      <p class="lead">Una selección de videos para inspirarte y prepararte: la Parkway, los parques, los grandes hikes y la seguridad con osos.</p>
+    </div>
+    <div class="vid-grid" id="vidGrid"></div>
+  </div>
+</section>
+
+<!-- ======================= GUÍA ======================= -->
+<section class="section aurora" id="guia">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Recomendaciones generales</span>
+      <h2>Todo lo que hay que saber antes de salir.</h2>
+      <p class="lead">Conducción, combustible, clima, osos, permisos, ropa y fotografía — la operativa de una expedición en las Rocosas.</p>
+    </div>
+    <div class="rec-grid" id="recGrid"></div>
+
+    <div class="section-head reveal" style="margin-top:64px">
+      <span class="eyebrow">Capas premium</span>
+      <h2>Las capas que lo hacen un producto de viaje.</h2>
+      <p class="lead">Gastronomía, compras, optimización de ruta, fotografía, operativa y preparación — el detalle que marca la diferencia.</p>
+    </div>
+    <div class="rec-grid" id="layerGrid"></div>
+
+    <div class="reveal" style="margin-top:56px">
+      <div class="pdf-cta">
+        <div class="t">
+          <h3>📕 Libro de viaje en PDF</h3>
+          <p>Una versión editorial tipo revista de lujo: portada, índice, mapas por día, checklists, presupuesto, restaurantes y códigos QR a los videos. Lista para imprimir o compartir con el cliente.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="CANADA_ROCKIES_EXPEDITION.pdf" download="Canadian-Rockies-Expedition.pdf">Descargar PDF ↓</a>
+          <a class="btn btn-ghost" href="pdf.html" target="_blank">Ver versión editorial ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer">
+  <div class="container">
+    <h3>Canadian Rockies Expedition</h3>
+    <div class="cols">
+      <div>
+        <p>Un itinerario privado por Calgary, Jasper y Banff a lo largo de la Icefields Parkway — diseñado como una experiencia de viaje premium, con la operativa, la fotografía y la logística de cada jornada.</p>
+      </div>
+      <div>
+        <h5>Secciones</h5>
+        <ul>
+          <li><a href="#resumen">Resumen ejecutivo</a></li>
+          <li><a href="#mapa">Mapa interactivo</a></li>
+          <li><a href="#dias">Días en detalle</a></li>
+          <li><a href="#atracciones">Atracciones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Recursos</h5>
+        <ul>
+          <li><a href="CANADA_ROCKIES_EXPEDITION.pdf" download="Canadian-Rockies-Expedition.pdf">Descargar libro (PDF)</a></li>
+          <li><a href="data/itinerary.json" target="_blank">Itinerario (JSON)</a></li>
+          <li><a href="#videos">Videos curados</a></li>
+          <li><a href="#guia">Guía & recomendaciones</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>5 – 13 Agosto 2026 · Alberta & British Columbia, Canadá</span>
+      <span>Fotografía: Wikimedia Commons · Mapa: OpenStreetMap / CARTO · Leaflet</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================= MODAL ======================= -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Detalle del punto">
+  <div class="modal-scrim"></div>
+  <div class="modal-panel">
+    <button class="modal-close" id="modalClose" aria-label="Cerrar">✕</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="assets/vendor/leaflet.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
