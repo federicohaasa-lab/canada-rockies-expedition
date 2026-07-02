@@ -223,7 +223,8 @@ img{display:block}
       d.schedule.map(function(s){return '<li><div class="t">'+esc(s.time)+'</div><div class="c"><b>'+s.icon+' '+esc(s.title)+'</b>'+(s.detail?'<span>'+esc(s.detail)+'</span>':"")+'</div></li>';}).join("")+'</ul></div>';
     if(d.alerts&&d.alerts.length) left+='<div class="card"><h4>⚠️ Alertas & operativa</h4><ul class="alerts">'+d.alerts.map(function(a){return '<li>'+esc(a)+'</li>';}).join("")+'</ul></div>';
 
-    var right='<div class="card"><h4>🍽️ Comida</h4><div class="kv">'+
+    var lodge = d.lodging ? '<div class="card" style="'+(/sin reservar|por confirmar/i.test(d.lodging.nights||'')?'background:#fff8f1;border-color:#ffe0c2':'background:#eef6f9;border-color:#d6e6ee')+'"><h4>🚐 Alojamiento · casa rodante</h4><div class="kv"><div class="r"><b>'+esc(d.lodging.where)+(d.lodging.nights?' · '+esc(d.lodging.nights):'')+'</b>'+(d.lodging.detail?esc(d.lodging.detail):'')+'</div></div>'+(d.lodging.options?'<div class="chips" style="margin-top:6px">'+d.lodging.options.map(function(o){return '<span class="chip">⛺ '+esc(o)+'</span>';}).join('')+'</div>':'')+'</div>' : '';
+    var right=lodge+'<div class="card"><h4>🍽️ Comida</h4><div class="kv">'+
         '<div class="r"><b>Desayuno</b>'+esc(d.food.breakfast)+'</div>'+
         '<div class="r"><b>Almuerzo en ruta</b>'+esc(d.food.lunch)+'</div>'+
         '<div class="r"><b>Cena</b>'+esc(d.food.dinner)+'</div>'+

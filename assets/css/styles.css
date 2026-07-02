@@ -488,3 +488,15 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spa
   .tl-item{padding-left:46px}
   .tl-node{left:2px;width:26px;height:26px}
 }
+
+/* lodging block (RV) */
+.lodge-block{background:linear-gradient(135deg,#eaf4f8,#f6fbfd)!important;border-color:#d3e4ec!important}
+.lodge-block.warn{background:#fff8f1!important;border-color:#ffe0c2!important;border-left:4px solid #f59e0b!important}
+.lodge-row{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.lodge-row b{font-family:var(--serif);font-size:1.18rem;color:var(--ink)}
+.lodge-nights{font-size:11.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--glacier-700);background:rgba(46,127,184,.13);padding:3px 11px;border-radius:var(--r-full)}
+.lodge-block.warn .lodge-nights{color:#b45309;background:#ffedd5}
+.lodge-detail{font-size:13.5px;color:var(--text-muted);margin-top:9px}
+.lodge-opts{list-style:none;margin-top:11px;display:grid;gap:7px}
+.lodge-opts li{font-size:13px;color:var(--text);padding-left:22px;position:relative;line-height:1.45}
+.lodge-opts li::before{content:"⛺";position:absolute;left:0}

@@ -9,11 +9,11 @@
 window.ITINERARY = {
   meta: {
     title: "Canadian Rockies Expedition",
-    subtitle: "Calgary · Jasper · Banff — Icefields Parkway",
-    tagline: "Ocho días entre glaciares, lagos turquesa y las cumbres más altas de las Rocosas canadienses.",
-    dates: "5 – 13 Agosto 2026",
-    datesOnGround: "6 – 13 Agosto · 8 días en Canadá",
-    party: "Expedición privada · 4 viajeros",
+    subtitle: "Road trip en casa rodante · Calgary · Jasper · Banff — Icefields Parkway",
+    tagline: "Nueve días en casa rodante entre glaciares, lagos turquesa y las cumbres más altas de las Rocosas canadienses.",
+    dates: "5 – 14 Agosto 2026",
+    datesOnGround: "6 – 14 Agosto · 9 días en Canadá",
+    party: "Expedición privada · 4 viajeros · casa rodante",
     travelers: [
       { name: "Freddy", age: 58 },
       { name: "Carola", age: 57 },
@@ -31,15 +31,15 @@ window.ITINERARY = {
   },
 
   stats: [
-    { icon: "🗓️", value: "8", label: "Días en Canadá", sub: "6 – 13 Ago" },
-    { icon: "🏙️", value: "3", label: "Ciudades base", sub: "Calgary · Jasper · Banff" },
-    { icon: "🛣️", value: "≈1.190", label: "Kilómetros", sub: "Road trip total" },
-    { icon: "🚗", value: "≈18 h", label: "Al volante", sub: "Tiempo de conducción" },
+    { icon: "🗓️", value: "9", label: "Días en Canadá", sub: "6 – 14 Ago" },
+    { icon: "🚐", value: "8", label: "Noches de camping", sub: "1 sin reservar (7 ago)" },
+    { icon: "🛣️", value: "≈1.320", label: "Kilómetros", sub: "Road trip total" },
+    { icon: "🚗", value: "≈19 h", label: "Al volante", sub: "Tiempo de conducción" },
     { icon: "🏞️", value: "3", label: "Parques", sub: "Banff · Jasper · Mt Robson" },
-    { icon: "💧", value: "6", label: "Lagos icónicos", sub: "Peyto · Maligne · Berg…" },
+    { icon: "💧", value: "7", label: "Lagos icónicos", sub: "Peyto · Moraine · Maligne…" },
     { icon: "🧊", value: "3", label: "Glaciares", sub: "Columbia Icefield" },
     { icon: "🥾", value: "5", label: "Grandes trekkings", sub: "1 épico +8 h" },
-    { icon: "📸", value: "12", label: "Highlights foto", sub: "Miradores icónicos" }
+    { icon: "📸", value: "14", label: "Highlights foto", sub: "Miradores icónicos" }
   ],
 
   /* Ordered waypoints for the master route polyline */
@@ -60,28 +60,28 @@ window.ITINERARY = {
       id: "calgary", name: "Calgary", type: "city", coords: [51.0447, -114.0719],
       img: "assets/img/photos/calgary.jpg", credit: "DXR / Wikimedia Commons",
       short: "Puerta de entrada a las Rocosas.",
-      description: "Ciudad de partida y regreso. Aquí se recoge el vehículo, se compran provisiones y el bear spray (no se puede volar con él), y se hace el último aprovisionamiento antes de la montaña. Aeropuerto internacional YYC.",
-      duration: "1 noche (Día 0 y 7)", difficulty: null, bestTime: "Atardecer sobre el Bow River",
+      description: "Ciudad de partida y regreso. Aquí se recoge la casa rodante, se compran provisiones y el bear spray (no se puede volar con él), y se hace el último aprovisionamiento antes de la montaña. Aeropuerto internacional YYC.",
+      duration: "1 noche (Día 0 y 8)", difficulty: null, bestTime: "Atardecer sobre el Bow River",
       photoTips: "Skyline desde McHugh Bluff o Prince's Island Park a la hora dorada (~20:30).",
-      days: [0, 1, 7], popularity: 3, reservation: "Reservar auto SUV/AWD con antelación."
+      days: [0, 1, 8], popularity: 3, reservation: "Reservar la casa rodante (motorhome) con antelación."
     },
     {
       id: "banff_town", name: "Banff", type: "city", coords: [51.1784, -115.5708],
       img: "assets/img/photos/banff_town.jpg", credit: "Adam Bishop / Wikimedia Commons",
       short: "Pueblo alpino icónico bajo Cascade Mountain.",
       description: "Corazón del Parque Nacional Banff y base de los últimos tres días. Banff Avenue enmarcada por Cascade Mountain, cafés, aguas termales (Banff Upper Hot Springs) y la góndola de Sulphur Mountain.",
-      duration: "Base 3 noches (Días 4–6)", difficulty: null, bestTime: "Mañana temprano en Banff Ave",
+      duration: "Base 3 noches (Días 5–7)", difficulty: null, bestTime: "Mañana temprano en Banff Ave",
       photoTips: "Cascade Mountain al final de Banff Avenue; Surprise Corner para el Fairmont Banff Springs.",
-      days: [1, 4, 5, 6, 7], popularity: 5, reservation: "Alojamiento en alta temporada: reservar con meses de antelación."
+      days: [1, 5, 6, 7, 8], popularity: 5, reservation: "Camping en alta temporada: reservar con meses de antelación."
     },
     {
       id: "lake_louise", name: "Lake Louise", type: "lake", coords: [51.4254, -116.1773],
       img: "assets/img/photos/lake_louise.jpg", credit: "Dietmar Rabich / Wikimedia Commons",
-      short: "El lago glaciar más famoso del mundo (parada opcional en ruta).",
-      description: "Sobre el corredor de la Icefields Parkway. Aguas turquesa bajo el glaciar Victoria y el Château Lake Louise. Parada opcional de camino a Jasper — el estacionamiento se llena muy temprano.",
-      duration: "30–60 min (opcional)", difficulty: "Fácil", bestTime: "Antes de las 8:00 (parking + luz)",
+      short: "El lago glaciar más famoso del mundo.",
+      description: "Aguas turquesa bajo el glaciar Victoria y el Château Lake Louise. Se visita en ruta el Día 1 y de nuevo el Día 6 con el shuttle. El estacionamiento se llena muy temprano — el shuttle es la mejor forma de acceder.",
+      duration: "1–2 h", difficulty: "Fácil", bestTime: "Antes de las 8:00 o vía shuttle",
       photoTips: "Orilla del château hacia el glaciar; reflejo perfecto sin viento a primera hora.",
-      days: [1], optional: true, popularity: 5, reservation: "Parking se satura: llegar 06:30–08:00 o usar shuttle Parks Canada."
+      days: [1, 6], popularity: 5, reservation: "Parking se satura: usar shuttle de Parks Canada (reservar)."
     },
     {
       id: "peyto_lake", name: "Peyto Lake", type: "lake", coords: [51.7161, -116.5261],
@@ -90,7 +90,7 @@ window.ITINERARY = {
       description: "Desde el estacionamiento de Bow Summit, un corto paseo lleva al mirador sobre este lago de un turquesa irreal, alimentado por harina glaciar. Una de las vistas más fotografiadas de Canadá.",
       duration: "45 min – 1 h", difficulty: "Fácil", bestTime: "Media mañana (10:00–12:00)",
       photoTips: "Gran angular desde la plataforma superior; el color intensifica con sol alto. Sube al sendero lateral para evitar multitudes.",
-      days: [1, 4], popularity: 5, reservation: "No requiere. Parking limitado — llegar temprano."
+      days: [1, 5], popularity: 5, reservation: "No requiere. Parking limitado — llegar temprano."
     },
     {
       id: "columbia_icefield", name: "Columbia Icefield · Athabasca Glacier", type: "glacier", coords: [52.2206, -117.2233],
@@ -99,7 +99,7 @@ window.ITINERARY = {
       description: "El Athabasca Glacier desciende desde el Columbia Icefield hasta el borde de la carretera. Opcionalmente: Ice Explorer (vehículo glaciar) y Skywalk sobre el precipicio. Punto medio de la Icefields Parkway.",
       duration: "1–2 h (3 h con tours)", difficulty: "Fácil", bestTime: "Mañana (menos gente, mejor luz)",
       photoTips: "Lengua del glaciar con figuras para escala; viento gélido — protege la cámara. Contraste de hielo azul y morrena.",
-      days: [1, 4], popularity: 5, reservation: "Ice Explorer / Skywalk: reserva recomendada online."
+      days: [1, 5], popularity: 5, reservation: "Ice Explorer / Skywalk: reserva recomendada online."
     },
     {
       id: "athabasca_falls", name: "Athabasca Falls", type: "waterfall", coords: [52.6642, -117.8850],
@@ -114,10 +114,10 @@ window.ITINERARY = {
       id: "jasper_town", name: "Jasper", type: "city", coords: [52.8737, -118.0814],
       img: "assets/img/photos/jasper_town.jpg", credit: "Florian Fuchs / Wikimedia Commons",
       short: "Base norte, capital del cielo oscuro.",
-      description: "Pueblo tranquilo dentro del Parque Nacional Jasper y base de tres noches. Reserva de Cielo Oscuro (Dark Sky Preserve) — noches ideales para la Vía Láctea. Punto de partida a Mount Robson y Maligne Lake.",
-      duration: "Base 3 noches (Días 1–3)", difficulty: null, bestTime: "Amanecer en Pyramid Lake",
+      description: "Pueblo tranquilo dentro del Parque Nacional Jasper y base de tres noches (camping). Reserva de Cielo Oscuro (Dark Sky Preserve) — noches ideales para la Vía Láctea. Punto de partida a Mount Robson y Maligne Lake.",
+      duration: "Base 3 noches (Días 2–4)", difficulty: null, bestTime: "Amanecer en Pyramid Lake",
       photoTips: "Pyramid Mountain reflejada al alba; astrofotografía desde Pyramid Island por la noche.",
-      days: [1, 2, 3, 4], popularity: 4, reservation: "Alojamiento limitado — reservar con antelación."
+      days: [1, 2, 3, 4, 5], popularity: 4, reservation: "Camping limitado — reservar con antelación."
     },
     {
       id: "mount_robson", name: "Mount Robson", type: "mountain", coords: [53.0353, -119.2360],
@@ -126,7 +126,7 @@ window.ITINERARY = {
       description: "La montaña más alta de las Rocosas canadienses, en el Parque Provincial Mount Robson (Columbia Británica). Punto de partida del legendario Berg Lake Trail. Crea su propio clima: nubes que aparecen y desaparecen en minutos.",
       duration: "Día completo", difficulty: "Exigente", bestTime: "Amanecer (cumbre despejada)",
       photoTips: "La cara norte suele estar nublada — paciencia. Reflejo en Kinney Lake a primera hora.",
-      days: [2], popularity: 5, reservation: "Zona horaria del Pacífico (¡cambio de hora!)."
+      days: [1, 2], popularity: 5, reservation: "Zona horaria del Pacífico (¡cambio de hora!)."
     },
     {
       id: "kinney_lake", name: "Kinney Lake", type: "lake", coords: [53.0603, -119.1889],
@@ -171,7 +171,7 @@ window.ITINERARY = {
       description: "Desde el camping Wilcox Creek, junto al Columbia Icefield. Sobre la línea de árboles se abre una vista frontal del Athabasca Glacier y el icefield. Praderas alpinas con borregos cimarrones (bighorn).",
       duration: "3–4 h · ≈8 km · +335 m", difficulty: "Moderado", bestTime: "Mañana (luz sobre el glaciar)",
       photoTips: "Mirador del glaciar desde el paso; incluye borregos para escala. Viento fuerte arriba.",
-      days: [4], popularity: 4, reservation: "No requiere. Expuesto — llevar cortavientos."
+      days: [5], popularity: 4, reservation: "No requiere. Expuesto — llevar cortavientos."
     },
     {
       id: "sunshine_meadows", name: "Sunshine Meadows", type: "trek", coords: [51.1150, -115.7817],
@@ -180,16 +180,16 @@ window.ITINERARY = {
       description: "Praderas de flores silvestres que se extienden sobre la frontera Alberta–Columbia Británica, en la Divisoria Continental. Acceso a pie o por góndola de Sunshine Village. Rock Isle Lake y vistas de Mount Assiniboine.",
       duration: "3–5 h · ≈8–12 km", difficulty: "Fácil–Moderado", bestTime: "Mañana (flores + luz)",
       photoTips: "Alfombras de flores en primer plano con picos al fondo; Rock Isle Lake desde el mirador.",
-      days: [5], popularity: 4, reservation: "Góndola Sunshine: ticket si se usa el ascenso."
+      days: [6], popularity: 4, reservation: "Góndola Sunshine: ticket si se usa el ascenso."
     },
     {
       id: "healy_pass", name: "Healy Pass", type: "trek", coords: [51.0500, -115.8300],
       img: "assets/img/photos/healy_pass.jpg", credit: "John Johnston / Wikimedia Commons",
       short: "El campo de flores silvestres más célebre de Banff.",
-      description: "Desde el estacionamiento de Sunshine, un largo ascenso hasta un paso alpino célebre por sus flores silvestres a inicios de agosto y las vistas hacia Pharaoh Peaks y Egypt Lake. Un clásico de fondo.",
+      description: "Desde el estacionamiento de Sunshine, un largo ascenso hasta un paso alpino célebre por sus flores silvestres a inicios de agosto y las vistas hacia Pharaoh Peaks y Egypt Lake. Alternativa de día completo al plan del Día 6.",
       duration: "6–8 h · ≈18,4 km · +655 m", difficulty: "Moderado–Exigente", bestTime: "Mañana temprano",
       photoTips: "Praderas floridas en su punto máximo a inicios de agosto; gran angular hacia Pharaoh Peaks.",
-      days: [5], popularity: 3, reservation: "No requiere. Zona de osos (arándanos) — bear spray."
+      days: [6], popularity: 3, reservation: "No requiere. Zona de osos (arándanos) — bear spray."
     },
     {
       id: "cory_pass", name: "Cory Pass", type: "trek", coords: [51.2000, -115.6300],
@@ -198,7 +198,7 @@ window.ITINERARY = {
       description: "Uno de los senderos más exigentes de Banff: fuerte desnivel, tramos expuestos y una vista brutal de la aguja de Mount Louis. Loop con Edith Pass. No apto para principiantes ni con roca mojada.",
       duration: "6–8 h · ≈13 km · +920 m", difficulty: "Difícil", bestTime: "Salida temprana",
       photoTips: "La torre de Mount Louis desde el paso; teleobjetivo para el escarpe. Cuidado en tramos expuestos.",
-      days: [6], popularity: 2, reservation: "No requiere. Terreno técnico — experiencia necesaria."
+      days: [7], popularity: 2, reservation: "No requiere. Terreno técnico — experiencia necesaria."
     },
     {
       id: "cascade_amphitheatre", name: "Cascade Amphitheatre", type: "trek", coords: [51.2650, -115.6050],
@@ -207,39 +207,48 @@ window.ITINERARY = {
       description: "Desde la estación de Mt Norquay, sube a un anfiteatro glaciar suspendido en Cascade Mountain, con paredes verticales y marmotas. Alternativa a Cory Pass el mismo día.",
       duration: "5–7 h · ≈15,4 km · +640 m", difficulty: "Moderado–Exigente", bestTime: "Mañana",
       photoTips: "Anfiteatro con las paredes de Cascade; flores y campos de roca en primer plano.",
-      days: [6], popularity: 3, reservation: "No requiere. Parking en Mt Norquay."
+      days: [7], popularity: 3, reservation: "No requiere. Parking en Mt Norquay."
     },
     {
       id: "lake_minnewanka", name: "Lake Minnewanka", type: "lake", coords: [51.2497, -115.4130],
       img: "assets/img/photos/lake_minnewanka.jpg", credit: "Jakub Frys / Wikimedia Commons",
-      short: "El mayor lago de Banff — cierre del viaje.",
-      description: "'Lago del Espíritu del Agua', el mayor del Parque Nacional Banff. Crucero opcional, paseo hasta Stewart Canyon y fauna abundante. Broche relajado antes del regreso a Calgary.",
+      short: "El mayor lago de Banff.",
+      description: "'Lago del Espíritu del Agua', el mayor del Parque Nacional Banff. Crucero opcional, paseo hasta Stewart Canyon y fauna abundante. Cierre relajado del último día de trek.",
       duration: "2–3 h", difficulty: "Fácil", bestTime: "Mañana (agua en calma)",
       photoTips: "Reflejos al amanecer; Two Jack Lake cercano con Mount Rundle de fondo.",
       days: [7], popularity: 4, reservation: "Crucero: reserva recomendada. Posibles cierres por osos."
+    },
+    {
+      id: "moraine_lake", name: "Moraine Lake", type: "lake", coords: [51.3217, -116.1860],
+      img: "assets/img/photos/hero_2.jpg", credit: "Gorgo / Wikimedia Commons",
+      short: "El turquesa imposible del Valley of the Ten Peaks.",
+      description: "Quizás el lago más icónico de Canadá: un azul-turquesa intenso rodeado por los Diez Picos. La carretera está cerrada a autos particulares — se accede solo en shuttle (Día 6, 14:00). El clásico se fotografía desde el Rockpile.",
+      duration: "1,5–2 h", difficulty: "Fácil", bestTime: "Media tarde (mejor luz sobre los picos)",
+      photoTips: "Vista clásica desde el Rockpile; el turquesa estalla con sol alto. Polarizador para el agua.",
+      days: [6], popularity: 5, reservation: "Solo por shuttle (Parks Canada o comercial) — reservar."
     }
   ],
 
   /* ---------------------------------------------------------------
-     DAYS — itinerary is preserved exactly; suggested schedule, food,
-     logistics, photography, alerts and gear are the added layer.
+     DAYS — itinerario del viaje (9 días · en casa rodante)
      --------------------------------------------------------------- */
   days: [
     {
       n: 0, date: "6 Ago", dow: "Miércoles", title: "Llegada a Calgary", base: "Calgary",
       route: "Aeropuerto YYC → Calgary (city)", routeStops: ["calgary"],
       badge: "Llegada & logística",
-      summary: "Aterrizaje en Calgary, recogida del vehículo, compra de provisiones y preparación de equipo para la expedición.",
+      lodging: { where: "Calgary", nights: "Noche 1 · reservado", detail: "Sitio de casa rodante reservado (RV park en Calgary: Calgary West Campground / Calaway RV)." },
+      summary: "Aterrizaje en Calgary, recogida de la casa rodante (motorhome), compra de provisiones y preparación del equipo para la expedición.",
       drivingKm: 30, drivingTime: "≈1 h", hikingTime: "—", hikeName: null,
-      highlights: ["Recogida de vehículo AWD/SUV", "Compra de bear spray y provisiones", "Primer asado de Alberta"],
+      highlights: ["Recogida de la casa rodante (motorhome)", "Provisiones para cocinar a bordo + bear spray", "Primer asado de Alberta"],
       alerts: ["Comprar bear spray en Calgary (no se puede volar con él).", "Descargar mapas offline (Maps.me / Google offline) de toda la ruta.", "Recuperarse del jet lag: dormir bien antes del gran día."],
       schedule: [
         { time: "17:30", icon: "🛬", title: "Llegada a Calgary (YYC)", detail: "Migración, aduana y equipaje." },
-        { time: "18:30", icon: "🚗", title: "Recogida del vehículo", detail: "SUV o AWD recomendado para la montaña." },
-        { time: "19:15", icon: "🛒", title: "Provisiones", detail: "Costco / Walmart / Real Canadian Superstore: agua, snacks, almuerzos de ruta." },
+        { time: "18:30", icon: "🚐", title: "Recogida de la casa rodante", detail: "Motorhome/campervan: repaso de agua, gas/propano, luces, dump y hookups." },
+        { time: "19:15", icon: "🛒", title: "Provisiones para cocinar a bordo", detail: "Costco / Walmart / Superstore: agua, comida de varios días, hielo, snacks de trail." },
         { time: "20:00", icon: "🧴", title: "Bear spray + gear", detail: "MEC o Atmosphere para lo que falte del equipo de montaña." },
-        { time: "20:45", icon: "🍽️", title: "Cena en Calgary", detail: "Primer bife de Alberta." },
-        { time: "22:00", icon: "🎒", title: "Armado de mochilas", detail: "Preparar equipo del Día 1 y dormir temprano." }
+        { time: "20:45", icon: "🍽️", title: "Cena en Calgary", detail: "Primer bife de Alberta (o estrenar la cocina de la RV)." },
+        { time: "22:00", icon: "🛏️", title: "Acomodar la casa rodante", detail: "Organizar la RV y descansar antes del gran día." }
       ],
       food: {
         breakfast: "En vuelo / café en el aeropuerto.",
@@ -250,79 +259,80 @@ window.ITINERARY = {
         premium: "Model Milk, Ten Foot Henry, Alforno."
       },
       logistics: {
-        gas: ["Cargar combustible en Calgary — es más barato que en la montaña."],
-        supplies: ["Costco / Walmart / Real Canadian Superstore para agua y comida de varios días."],
-        shops: ["MEC (Mountain Equipment Company) y Atmosphere para equipo outdoor y bear spray."]
+        gas: ["Cargar combustible en Calgary — la RV consume bastante y es más barato aquí que en la montaña."],
+        supplies: ["Costco / Walmart / Superstore para agua, comida de varios días e hielo (nevera de la RV)."],
+        shops: ["MEC y Atmosphere (equipo outdoor y bear spray)."]
       },
       photography: { spots: ["Skyline desde McHugh Bluff", "Bow River / Prince's Island Park"], goldenHour: "≈20:30", drone: "Permitido fuera de parques nacionales, respetando normas de la ciudad." },
       weather: { summary: "Seco y templado en la pradera.", tempHigh: 24, tempLow: 12, conditions: "Soleado" },
       clothing: ["Ropa cómoda de viaje", "Una capa de abrigo por si refresca de noche"],
-      gear: ["Adaptador de enchufe (tipo A/B, 120V)", "Soporte de teléfono para el auto", "Cooler para el maletero"],
-      optimization: ["Hacer TODAS las compras hoy: mañana no hay supermercados en la Icefields Parkway.", "Cargar mapas offline de Banff, Jasper y Mount Robson."],
+      gear: ["Adaptador de enchufe (tipo A/B, 120V)", "Cable de hookup + adaptadores de la RV", "Utensilios/cocina y bolsas de basura", "Linterna/frontal y nivel para estacionar la RV"],
+      optimization: ["Hacer TODAS las compras hoy: mañana no hay supermercados en la Icefields Parkway.", "Cargar mapas offline de Banff, Jasper y Mount Robson.", "Guardar toda la comida en la RV cerrada (país de osos): nunca dejar comida afuera.", "Vaciar/llenar tanques (dump & fill) cuando haya servicio; respetar horarios de generador en los campings."],
       routeCoords: [[51.1225, -114.0133], [51.0447, -114.0719]], mapCenter: [51.08, -114.05], mapZoom: 11
     },
     {
-      n: 1, date: "7 Ago", dow: "Jueves", title: "Calgary → Jasper", base: "Jasper (overnight)",
-      route: "Calgary · Banff (stop) · Peyto Lake · Columbia Icefield · Athabasca Falls · Jasper",
-      routeStops: ["calgary", "banff_town", "lake_louise", "peyto_lake", "columbia_icefield", "athabasca_falls", "jasper_town"],
+      n: 1, date: "7 Ago", dow: "Jueves", title: "Calgary → Icefields Parkway → Mount Robson", base: "Mount Robson (BC)",
+      route: "Calgary · Banff · Lake Louise · Peyto Lake · Columbia Icefield · Athabasca Falls · Jasper · Mount Robson",
+      routeStops: ["calgary", "banff_town", "lake_louise", "peyto_lake", "columbia_icefield", "athabasca_falls", "jasper_town", "mount_robson"],
       badge: "El gran día escénico",
-      summary: "La Icefields Parkway, una de las carreteras más bellas del mundo. Día largo de conducción con las paradas más icónicas del viaje.",
-      drivingKm: 412, drivingTime: "≈6 h", hikingTime: "Paseos cortos", hikeName: "Miradores en ruta",
-      highlights: ["Peyto Lake (cabeza de lobo)", "Athabasca Glacier / Columbia Icefield", "Athabasca Falls", "Bow Lake y Crowfoot Glacier"],
-      alerts: ["⛽ COMBUSTIBLE: la única gasolinera entre Lake Louise y Jasper es Saskatchewan River Crossing (cara, horario limitado). Llenar en Lake Louise.", "📵 Sin cobertura de señal en casi toda la Parkway.", "🎫 Se requiere Parks Canada Pass (colgar en el parabrisas).", "🦌 Fauna en la carretera — conducir con precaución."],
+      lodging: { where: "Cerca de Mount Robson", nights: "Noche 1 · sitio SIN reservar", detail: "El único sitio del viaje aún sin reserva. Campings para casa rodante recomendados:", options: ["Robson Meadows Campground (Mount Robson PP, junto al visitor centre — apto RV, reservar en BC Parks / camping.bcparks.ca)", "Robson River Campground (Mount Robson PP, más pequeño)", "Mount Robson Lodge & Robson Shadows Campground (privado, sitios RV con hookups, Hwy 16)", "Emperor Ridge Campground (privado, cerca del visitor centre)", "Lucerne Campground (Mount Robson PP, lado este · Yellowhead Lake)", "Valemount (~30 min): Irvin's Park & Campground · Valemount Pines Campground"] },
+      summary: "La Icefields Parkway completa, una de las carreteras más bellas del mundo, y se continúa más allá de Jasper hasta dormir a los pies del Mount Robson. Día largo y espectacular.",
+      drivingKm: 500, drivingTime: "≈7 h", hikingTime: "Paseos cortos", hikeName: "Miradores en ruta",
+      highlights: ["Peyto Lake (cabeza de lobo)", "Athabasca Glacier / Columbia Icefield", "Athabasca Falls", "Primer avistaje del Mount Robson (3.954 m)"],
+      alerts: ["⛽ COMBUSTIBLE: llenar en Lake Louise y de nuevo en Jasper — es la última antes de Mount Robson.", "🕐 Cambio de zona horaria al entrar a BC: Mount Robson usa hora del Pacífico (−1 h).", "🛣️ Día muy largo (≈500 km) — salir muy temprano.", "📵 Sin cobertura en casi toda la ruta. 🎫 Parks Canada Pass a la vista."],
       schedule: [
-        { time: "06:30", icon: "🚗", title: "Salida de Calgary", detail: "Salir temprano para aprovechar la luz y evitar multitudes." },
-        { time: "08:00", icon: "☕", title: "Parada en Banff", detail: "Café en Wild Flour Bakery; foto de Cascade Mountain en Banff Avenue." },
-        { time: "09:15", icon: "💧", title: "Lake Louise (opcional)", detail: "Vista rápida — llegar temprano por el parking." },
-        { time: "10:30", icon: "📸", title: "Peyto Lake", detail: "Mirador de Bow Summit sobre el lago turquesa." },
-        { time: "12:30", icon: "🍽️", title: "Almuerzo Saskatchewan River Crossing", detail: "¡Rellenar combustible! Opciones limitadas — llevar snacks." },
-        { time: "14:00", icon: "🧊", title: "Columbia Icefield", detail: "Athabasca Glacier; opcional Ice Explorer / Skywalk (reservar)." },
-        { time: "16:30", icon: "💦", title: "Athabasca Falls", detail: "Pasarelas sobre el cañón." },
-        { time: "17:30", icon: "🏨", title: "Llegada a Jasper", detail: "Check-in y descanso." },
-        { time: "19:00", icon: "🍽️", title: "Cena en Jasper", detail: "Evil Dave's Grill o Jasper Pizza Place." }
+        { time: "06:00", icon: "🚗", title: "Salida de Calgary", detail: "Salida temprano: es el día más largo de conducción." },
+        { time: "07:30", icon: "☕", title: "Parada en Banff", detail: "Café rápido (Wild Flour); foto de Cascade Mountain." },
+        { time: "09:00", icon: "📸", title: "Lake Louise + Peyto Lake", detail: "Vista rápida de Lake Louise (parking temprano) y mirador de Peyto." },
+        { time: "12:30", icon: "🍽️", title: "Almuerzo Saskatchewan Crossing", detail: "¡Rellenar snacks! Opciones limitadas." },
+        { time: "14:00", icon: "🧊", title: "Columbia Icefield", detail: "Athabasca Glacier; opcional Ice Explorer / Skywalk." },
+        { time: "16:00", icon: "💦", title: "Athabasca Falls", detail: "Pasarelas sobre el cañón." },
+        { time: "17:00", icon: "⛽", title: "Jasper — repostar", detail: "Última gasolinera y compras antes de Robson." },
+        { time: "18:30", icon: "🏔️", title: "Llegada a Mount Robson", detail: "Check-in y cena; atardecer sobre la montaña." }
       ],
       food: {
-        breakfast: "Wild Flour Bakery o Whitebark Café (Banff).",
-        lunch: "The Crossing (Saskatchewan River Crossing) — limitado; ideal llevar picnic.",
-        dinner: "Evil Dave's Grill, Harvest o Fiddle River (Jasper).",
-        bestDish: "Elk o bison; poutine post-carretera.",
-        quick: "Jasper Pizza Place; snacks de Calgary.",
-        premium: "Harvest, Fiddle River (Jasper)."
+        breakfast: "Café rápido en Calgary o Banff (Wild Flour).",
+        lunch: "The Crossing (Saskatchewan River Crossing) o picnic en ruta.",
+        dinner: "Valemount (Three Ranges Brewing, Caribou Grill) o picnic — opciones limitadas cerca de Robson.",
+        bestDish: "Algo contundente tras el gran día de ruta.",
+        quick: "Snacks de Calgary; food court del Icefield Centre.",
+        premium: "Three Ranges Brewing (Valemount)."
       },
       logistics: {
-        gas: ["Llenar en Lake Louise (última barata).", "Saskatchewan River Crossing solo para emergencia.", "Repostar de nuevo al llegar a Jasper."],
-        supplies: ["Llevar agua y almuerzo desde Calgary/Banff — no hay supermercados en la Parkway."],
-        shops: ["Última compra en Banff (IGA) antes de entrar a la Parkway."]
+        gas: ["Llenar en Lake Louise (última barata).", "Repostar en Jasper antes de Robson.", "Saskatchewan Crossing solo emergencia."],
+        supplies: ["Agua y almuerzo desde Calgary/Banff — no hay supermercados en la Parkway."],
+        shops: ["Últimas compras en Jasper (IGA) antes de Mount Robson."]
       },
-      photography: { spots: ["Peyto Lake (media mañana)", "Bow Lake", "Mistaya Canyon", "Athabasca Falls"], goldenHour: "≈20:45 (Jasper)", drone: "⚠️ PROHIBIDO en parques nacionales (Banff/Jasper) sin permiso." },
-      weather: { summary: "Valle templado; frío y viento en el icefield.", tempHigh: 22, tempLow: 8, conditions: "Variable en altura" },
-      clothing: ["Sistema de capas", "Cortavientos / impermeable", "Capa de abrigo para el glaciar (viento gélido)"],
-      gear: ["Botella de agua reutilizable", "Snacks de ruta", "Parks Canada Pass a la vista"],
-      optimization: ["Parada inteligente cada 1,5–2 h: Banff → Peyto → Crossing → Icefield → Athabasca Falls.", "Si el clima tapa Peyto, priorizar Bow Lake (más bajo, menos nubes).", "Buffer de +2 h sobre el tiempo de Google por paradas y tráfico escénico."],
-      routeCoords: [[51.0447, -114.0719], [51.1784, -115.5708], [51.4254, -116.1773], [51.6690, -116.4110], [51.7161, -116.5261], [51.9698, -116.7300], [52.2206, -117.2233], [52.4200, -117.6000], [52.6642, -117.8850], [52.8737, -118.0814]],
-      mapCenter: [51.95, -116.85], mapZoom: 7
+      photography: { spots: ["Peyto Lake (media mañana)", "Bow Lake", "Athabasca Falls", "Mount Robson al atardecer desde el visitor centre"], goldenHour: "≈20:45", drone: "⚠️ PROHIBIDO en parques nacionales (Banff/Jasper). Parque provincial: requiere permiso." },
+      weather: { summary: "Valle templado; frío y viento en el icefield; Robson nublado.", tempHigh: 22, tempLow: 7, conditions: "Variable en altura" },
+      clothing: ["Sistema de capas", "Cortavientos / impermeable", "Capa de abrigo para el glaciar"],
+      gear: ["Parks Canada Pass a la vista", "Botella de agua + snacks", "Cargador de auto para el trayecto largo"],
+      optimization: ["Salida 06:00 obligada por los ≈500 km.", "Llenar estanque en Lake Louise y Jasper (crítico).", "Recordar el cambio a hora del Pacífico al entrar a BC.", "Buffer de +2 h sobre el tiempo de Google por las paradas escénicas."],
+      routeCoords: [[51.0447, -114.0719], [51.1784, -115.5708], [51.4254, -116.1773], [51.7161, -116.5261], [52.2206, -117.2233], [52.6642, -117.8850], [52.8737, -118.0814], [53.0353, -119.2360]],
+      mapCenter: [52.1, -117.0], mapZoom: 7
     },
     {
-      n: 2, date: "8 Ago", dow: "Viernes", title: "Mount Robson", base: "Jasper",
-      route: "Jasper · Mount Robson · Kinney Lake · sección Berg Lake Trail · Jasper",
-      routeStops: ["jasper_town", "mount_robson", "kinney_lake", "berg_lake"],
+      n: 2, date: "8 Ago", dow: "Viernes", title: "Mount Robson — trek + traslado a Jasper", base: "Jasper",
+      route: "Mount Robson · Kinney Lake · sección Berg Lake Trail · Jasper",
+      routeStops: ["mount_robson", "kinney_lake", "berg_lake", "jasper_town"],
       badge: "Trek épico · 8–9 h",
-      summary: "El gran día de montaña: la cumbre más alta de las Rocosas canadienses y una sección del legendario Berg Lake Trail. Trekking de 8–9 horas.",
+      lodging: { where: "Jasper", nights: "Noche 1 de 3 · reservado", detail: "Camping reservado en Jasper — 3 noches (8·9·10). Whistlers / Wapiti / Wabasso." },
+      summary: "El gran día de montaña: la cumbre más alta de las Rocosas canadienses y una sección del legendario Berg Lake Trail. Al terminar, traslado a Jasper para las próximas 3 noches.",
       drivingKm: 170, drivingTime: "≈2,5 h", hikingTime: "8–9 h", hikeName: "Kinney Lake + sección Berg Lake Trail",
       highlights: ["Mount Robson (3.954 m)", "Kinney Lake esmeralda", "Valley of a Thousand Falls", "Emperor Falls (según turnaround)"],
-      alerts: ["🐻 Temporada de arándanos = MÁXIMA actividad de osos. Bear spray accesible, hacer ruido, ir en grupo.", "🕐 Cambio de zona horaria: Mount Robson usa hora del Pacífico (−1 h).", "🚧 Berg Lake Trail: verificar reapertura por daños de la crecida de 2021 en BC Parks.", "⛰️ Día largo y exigente — salir muy temprano; el Robson genera su propio clima."],
+      alerts: ["🐻 Temporada de arándanos = MÁXIMA actividad de osos. Bear spray accesible, hacer ruido, ir en grupo.", "🕐 Mount Robson en hora del Pacífico (−1 h respecto a Jasper).", "🚧 Berg Lake Trail: verificar reapertura por la crecida de 2021 en BC Parks.", "⛰️ Día largo y exigente — salir muy temprano; el Robson genera su propio clima."],
       schedule: [
         { time: "05:30", icon: "☕", title: "Desayuno temprano", detail: "Preparar mochila y almuerzo de trail." },
-        { time: "06:00", icon: "🚗", title: "Salida a Mount Robson", detail: "≈85 km / 1 h (recordar cambio de hora)." },
-        { time: "07:15", icon: "📍", title: "Visitor Centre / trailhead", detail: "Registro y últimos preparativos." },
-        { time: "07:30", icon: "🥾", title: "Inicio del sendero", detail: "Hacia Kinney Lake (≈4,5 km)." },
-        { time: "08:45", icon: "💧", title: "Kinney Lake", detail: "Continuar por la sección de Berg Lake Trail." },
+        { time: "06:00", icon: "📍", title: "Al trailhead", detail: "Registro en el visitor centre." },
+        { time: "06:30", icon: "🥾", title: "Inicio del sendero", detail: "Hacia Kinney Lake (≈4,5 km)." },
+        { time: "08:00", icon: "💧", title: "Kinney Lake", detail: "Continuar por la sección de Berg Lake Trail." },
         { time: "13:00", icon: "🍽️", title: "Almuerzo en ruta", detail: "Punto de retorno según ritmo (Whitehorn / Emperor Falls)." },
         { time: "16:30", icon: "🔙", title: "Regreso al trailhead", detail: "Fin del trek." },
-        { time: "18:30", icon: "🍽️", title: "Cena en Jasper", detail: "Recuperación con comida abundante." }
+        { time: "17:30", icon: "🚗", title: "Traslado a Jasper", detail: "≈85 km / 1 h (vuelta a hora de montaña)." },
+        { time: "18:45", icon: "🏨", title: "Check-in en Jasper", detail: "Cena y recuperación." }
       ],
       food: {
-        breakfast: "Bear's Paw Bakery o SnowDome Coffee (Jasper), muy temprano.",
+        breakfast: "Café/desayuno en el alojamiento de Robson, muy temprano.",
         lunch: "Picnic de trail: sándwiches, frutos secos, barras energéticas, electrolitos.",
         dinner: "The Raven Bistro o Harvest (Jasper).",
         bestDish: "Trucha de Alberta; algo contundente post-trek.",
@@ -330,7 +340,7 @@ window.ITINERARY = {
         premium: "The Raven Bistro (Jasper)."
       },
       logistics: {
-        gas: ["Llenar en Jasper antes de salir — no hay servicio en Robson salvo el visitor centre."],
+        gas: ["Repostar en Jasper al llegar; en Robson solo el visitor centre."],
         supplies: ["Cargar 2–3 L de agua por persona + filtro; comida para todo el día."],
         shops: ["Robson Visitor Centre (básicos, café)."]
       },
@@ -338,15 +348,16 @@ window.ITINERARY = {
       weather: { summary: "Robson crea su propio clima; a menudo nublado.", tempHigh: 18, tempLow: 6, conditions: "Cambiante, posible lluvia" },
       clothing: ["Capas completas de trekking", "Impermeable resistente", "Botas robustas ya domadas", "Bastones de trekking"],
       gear: ["Bear spray al cinturón", "Filtro/pastillas de agua", "Botiquín", "Frontal (headlamp)", "Silbato"],
-      optimization: ["Salida a las 06:00 obligada: el trek de 8–9 h no admite empezar tarde.", "Definir punto de retorno por reloj, no por distancia (dar media vuelta a las 13:00 pase lo que pase).", "Plan B si llueve fuerte: quedarse en Kinney Lake y bajar seguro."],
-      routeCoords: [[52.8737, -118.0814], [52.9400, -118.5500], [53.0353, -119.2360], [53.0603, -119.1889], [53.1394, -119.1461]],
+      optimization: ["Salida 06:00 obligada: el trek de 8–9 h no admite empezar tarde.", "Definir punto de retorno por reloj (media vuelta a las 13:00 pase lo que pase).", "Plan B si llueve fuerte: quedarse en Kinney Lake y bajar seguro."],
+      routeCoords: [[53.0353, -119.2360], [53.0603, -119.1889], [53.1394, -119.1461], [53.0353, -119.2360], [52.9400, -118.5500], [52.8737, -118.0814]],
       mapCenter: [53.00, -118.85], mapZoom: 9
     },
     {
-      n: 3, date: "9 Ago", dow: "Sábado", title: "Jasper — Maligne Lake", base: "Jasper",
+      n: 3, date: "9 Ago", dow: "Sábado", title: "Jasper — Bald Hills & Maligne Lake", base: "Jasper",
       route: "Jasper · Bald Hills · Maligne Lake · Spirit Island",
       routeStops: ["jasper_town", "bald_hills", "maligne_lake"],
       badge: "Hike + lago icónico",
+      lodging: { where: "Jasper", nights: "Noche 2 de 3 · reservado", detail: "Camping reservado en Jasper (segunda noche)." },
       summary: "Ascenso a Bald Hills para una panorámica de 360° sobre el Maligne Lake, seguido del crucero a la mítica Spirit Island.",
       drivingKm: 96, drivingTime: "≈2 h", hikingTime: "4–6 h", hikeName: "Bald Hills",
       highlights: ["Panorámica 360° desde Bald Hills", "Spirit Island (crucero)", "Fauna en Maligne Road", "Medicine Lake"],
@@ -383,20 +394,60 @@ window.ITINERARY = {
       mapCenter: [52.79, -117.86], mapZoom: 10
     },
     {
-      n: 4, date: "10 Ago", dow: "Domingo", title: "Jasper → Banff", base: "Banff (overnight)",
+      n: 4, date: "10 Ago", dow: "Domingo", title: "Jasper — día flexible de montaña", base: "Jasper",
+      route: "Jasper y alrededores (a elección)",
+      routeStops: ["jasper_town"],
+      badge: "Jasper a tu ritmo",
+      lodging: { where: "Jasper", nights: "Noche 3 de 3 · reservado", detail: "Camping reservado en Jasper (última noche)." },
+      summary: "Día para elegir según energía y clima: hikes locales, cañones, lagos, aguas termales o descanso. Jasper es Reserva de Cielo Oscuro — noche ideal para la Vía Láctea.",
+      drivingKm: 70, drivingTime: "≈1,5 h", hikingTime: "3–6 h (opcional)", hikeName: "Opciones en Jasper",
+      highlights: ["Sulphur Skyline + Miette Hot Springs", "Valley of Five Lakes", "Edith Cavell / Cavell Meadows", "Maligne Canyon", "Pyramid Lake al amanecer", "Cielo oscuro — Vía Láctea"],
+      alerts: ["🐻 Zona de osos activa en todos los senderos.", "🎫 Reservar con antelación cualquier actividad (aguas termales, tours).", "🌡️ Miette Hot Springs cierra temprano — verificar horario."],
+      schedule: [
+        { time: "08:00", icon: "☕", title: "Desayuno sin prisa", detail: "Bear's Paw Bakery." },
+        { time: "09:30", icon: "🥾", title: "Opción A · Sulphur Skyline", detail: "Ascenso con vistas + relax en Miette Hot Springs." },
+        { time: "09:30", icon: "🏞️", title: "Opción B · Valley of Five Lakes", detail: "Lagos turquesa + Maligne Canyon; hike suave." },
+        { time: "14:00", icon: "🌸", title: "Opción C · Edith Cavell / Cavell Meadows", detail: "Glaciar Angel + praderas de flores." },
+        { time: "17:00", icon: "📸", title: "Pyramid Lake / Patricia Lake", detail: "Atardecer y reflejos." },
+        { time: "22:00", icon: "🌌", title: "Astrofotografía", detail: "Vía Láctea desde Pyramid Island (Dark Sky)." }
+      ],
+      food: {
+        breakfast: "Bear's Paw Bakery / SnowDome Coffee.",
+        lunch: "Picnic en el sendero elegido.",
+        dinner: "Harvest o Jasper Pizza Place.",
+        bestDish: "Cordero o trucha de Alberta.",
+        quick: "Coco's Café.",
+        premium: "Orso Trattoria (Fairmont Jasper Park Lodge)."
+      },
+      logistics: {
+        gas: ["Llenar en Jasper (día tranquilo, aprovechar)."],
+        supplies: ["IGA / Robinson's (Jasper) para el picnic."],
+        shops: ["Souvenirs en Connaught Drive."]
+      },
+      photography: { spots: ["Pyramid Lake al amanecer", "Valley of Five Lakes", "Vía Láctea (Dark Sky Preserve)"], goldenHour: "Amanecer ~06:00 / atardecer ~20:45", drone: "⚠️ Prohibido en parque nacional." },
+      weather: { summary: "Templado y estable en el valle.", tempHigh: 22, tempLow: 8, conditions: "Soleado" },
+      clothing: ["Capas ligeras", "Traje de baño (Miette Hot Springs)", "Capa de abrigo para la noche de astro"],
+      gear: ["Bear spray", "Trípode para astrofotografía", "Frontal con luz roja"],
+      optimization: ["Elegir el hike según el clima de la mañana.", "Guardar energía: mañana es traslado + Wilcox Pass.", "Noche despejada = astrofoto; si nublado, descansar para el trek del Día 5."],
+      routeCoords: [[52.8737, -118.0814], [52.9100, -118.0000], [52.8737, -118.0814]],
+      mapCenter: [52.87, -118.05], mapZoom: 10
+    },
+    {
+      n: 5, date: "11 Ago", dow: "Lunes", title: "Jasper → Banff (Wilcox Pass)", base: "Banff",
       route: "Jasper · Wilcox Pass · Icefields Parkway (return) · Banff",
       routeStops: ["jasper_town", "wilcox_pass", "columbia_icefield", "peyto_lake", "banff_town"],
       badge: "Trek glaciar + traslado",
+      lodging: { where: "Banff", nights: "Noche 1 de 3 · reservado", detail: "Camping reservado en Banff — 3 noches (11·12·13). Tunnel Mountain / Two Jack Lakeside." },
       summary: "Trek a Wilcox Pass con la mejor vista frontal del Athabasca Glacier, y regreso escénico por la Icefields Parkway hasta Banff.",
       drivingKm: 290, drivingTime: "≈4 h", hikingTime: "3–4 h", hikeName: "Wilcox Pass",
-      highlights: ["Vista frontal del Athabasca Glacier", "Praderas alpinas con bighorn", "Segunda pasada por la Icefields Parkway"],
+      highlights: ["Vista frontal del Athabasca Glacier", "Praderas alpinas con bighorn", "Segunda pasada por la Icefields Parkway", "Peyto Lake (segunda oportunidad)"],
       alerts: ["⛽ Llenar en Jasper — tramo largo con poco servicio.", "💨 Wilcox Pass expuesto y ventoso sobre la línea de árboles.", "🐏 Borregos cimarrones (bighorn) en el sendero — no alimentar.", "⏳ Día combinado (hike + 4 h de ruta): gestionar bien el tiempo."],
       schedule: [
         { time: "06:30", icon: "🚗", title: "Check-out y salida de Jasper", detail: "Rumbo sur por la Parkway." },
         { time: "08:15", icon: "📍", title: "Trailhead Wilcox Creek", detail: "Junto al Columbia Icefield." },
         { time: "08:30", icon: "🥾", title: "Trek Wilcox Pass", detail: "Subida a la vista del glaciar." },
         { time: "12:30", icon: "🍽️", title: "Almuerzo Icefield Centre", detail: "Fin del hike; comida y combustible." },
-        { time: "13:30", icon: "🚗", title: "Ruta a Banff", detail: "Bow Lake, Peyto (si faltó) en el camino." },
+        { time: "13:30", icon: "🚗", title: "Ruta a Banff", detail: "Bow Lake, Peyto (segunda oportunidad) en el camino." },
         { time: "17:30", icon: "🏨", title: "Llegada a Banff", detail: "Check-in." },
         { time: "19:00", icon: "🍽️", title: "Cena en Banff", detail: "Park Distillery o The Bison." }
       ],
@@ -417,66 +468,71 @@ window.ITINERARY = {
       weather: { summary: "Frío y ventoso en el paso; agradable en el valle.", tempHigh: 20, tempLow: 6, conditions: "Ventoso en altura" },
       clothing: ["Capas de trekking", "Cortavientos / impermeable", "Guantes ligeros para el paso"],
       gear: ["Bear spray", "Agua 2 L", "Cargador de auto para el trayecto largo"],
-      optimization: ["Hacer Wilcox temprano y conducir a Banff por la tarde (mejor que al revés).", "Aprovechar el regreso por la Parkway para las fotos que faltaron el Día 1.", "Buffer de +1 h por paradas fotográficas en la Parkway."],
+      optimization: ["Hacer Wilcox temprano y conducir a Banff por la tarde.", "Aprovechar el regreso por la Parkway para las fotos que faltaron el Día 1.", "Buffer de +1 h por paradas fotográficas."],
       routeCoords: [[52.8737, -118.0814], [52.6642, -117.8850], [52.2206, -117.2233], [52.1936, -117.1817], [51.9698, -116.7300], [51.7161, -116.5261], [51.4254, -116.1773], [51.1784, -115.5708]],
       mapCenter: [52.05, -116.65], mapZoom: 7
     },
     {
-      n: 5, date: "11 Ago", dow: "Lunes", title: "Banff — Healy Pass / Sunshine Meadows", base: "Banff",
-      route: "Banff · Sunshine parking · Healy Pass / Sunshine Meadows",
-      routeStops: ["banff_town", "sunshine_meadows", "healy_pass"],
-      badge: "Trek de flores alpinas",
-      summary: "Trekking por praderas alpinas: Healy Pass, célebre por sus flores silvestres a inicios de agosto, y las Sunshine Meadows sobre la Divisoria Continental.",
-      drivingKm: 24, drivingTime: "≈40 min", hikingTime: "6–8 h", hikeName: "Healy Pass / Sunshine Meadows",
-      highlights: ["Flores silvestres en su punto máximo", "Vistas a Pharaoh Peaks / Egypt Lake", "Praderas de la Divisoria Continental"],
-      alerts: ["🐻 Praderas con arándanos = zona de osos activa. Bear spray y ruido.", "⛈️ Salir temprano: tormentas eléctricas por la tarde en el paso.", "☀️ Terreno abierto — protección solar y viento."],
+      n: 6, date: "12 Ago", dow: "Martes", title: "Banff — Sunshine Meadows + Shuttle a Lake Louise & Moraine", base: "Banff",
+      route: "Banff · Sunshine Meadows · 14:00 Shuttle → Lake Louise · Moraine Lake",
+      routeStops: ["banff_town", "sunshine_meadows", "healy_pass", "lake_louise", "moraine_lake"],
+      badge: "Alpino + lagos icónicos",
+      lodging: { where: "Banff", nights: "Noche 2 de 3 · reservado", detail: "Camping reservado en Banff (segunda noche)." },
+      summary: "Mañana en las praderas alpinas de Sunshine Meadows y, a las 14:00, shuttle a los dos lagos más icónicos de las Rocosas: Lake Louise y Moraine Lake.",
+      drivingKm: 30, drivingTime: "≈45 min", hikingTime: "3–4 h (mañana)", hikeName: "Sunshine Meadows",
+      highlights: ["Sunshine Meadows / Rock Isle Lake", "Lake Louise turquesa", "Moraine Lake · Valley of the Ten Peaks", "Healy Pass (alternativa de día completo)"],
+      alerts: ["⏰ SHUTTLE 14:00 — volver de Sunshine con margen y estar en el punto de encuentro antes.", "🚌 Moraine Lake Road está cerrada a autos particulares: solo se accede en shuttle (con reserva).", "🐻 Praderas con arándanos = zona de osos.", "💡 Healy Pass (18 km, 6–8 h) es la alternativa si se prefiere un solo gran trek en vez del shuttle."],
       schedule: [
-        { time: "06:30", icon: "☕", title: "Desayuno en Banff", detail: "Wild Flour Bakery / Little Wild Coffee." },
-        { time: "07:15", icon: "🚗", title: "Al parking de Sunshine", detail: "≈12 km." },
-        { time: "07:45", icon: "🥾", title: "Inicio Healy Pass", detail: "Ascenso largo entre bosque y praderas." },
-        { time: "12:00", icon: "🌼", title: "Healy Pass + almuerzo", detail: "Praderas floridas y vistas a Pharaoh Peaks." },
-        { time: "15:30", icon: "🔙", title: "Regreso al parking", detail: "" },
-        { time: "16:30", icon: "♨️", title: "Banff Upper Hot Springs", detail: "Recuperación opcional en aguas termales." },
-        { time: "19:00", icon: "🍽️", title: "Cena en Banff", detail: "The Maple Leaf o Farm & Fire." }
+        { time: "06:30", icon: "☕", title: "Desayuno en Banff", detail: "Wild Flour / Little Wild Coffee." },
+        { time: "07:15", icon: "🚡", title: "Sunshine Village", detail: "Góndola o parking hacia las praderas." },
+        { time: "07:45", icon: "🥾", title: "Sunshine Meadows", detail: "Rock Isle Lake, Standish Viewpoint; alpino sobre la Divisoria." },
+        { time: "12:00", icon: "🔙", title: "Bajada", detail: "Regreso con tiempo de sobra." },
+        { time: "13:00", icon: "🍽️", title: "Almuerzo Lake Louise", detail: "Comer cerca del punto del shuttle." },
+        { time: "14:00", icon: "🚌", title: "SHUTTLE a Lake Louise & Moraine", detail: "Salida 14:00 (reservado)." },
+        { time: "14:30", icon: "💧", title: "Lake Louise", detail: "Orilla del château y glaciar Victoria." },
+        { time: "16:00", icon: "🏔️", title: "Moraine Lake", detail: "Rockpile y Valley of the Ten Peaks." },
+        { time: "18:00", icon: "🚗", title: "Regreso a Banff", detail: "Cena en el pueblo." }
       ],
       food: {
         breakfast: "Wild Flour Bakery o Little Wild Coffee (Banff).",
-        lunch: "Picnic en Healy Pass.",
+        lunch: "Lake Louise (Trailhead Café / Lake Louise Village) antes del shuttle.",
         dinner: "The Maple Leaf o Farm & Fire (Banff).",
         bestDish: "Cordero de Alberta.",
-        quick: "Day lodge de Sunshine Village.",
+        quick: "Laggan's Bakery (Lake Louise).",
         premium: "The Maple Leaf (Banff)."
       },
       logistics: {
         gas: ["Llenar en Banff."],
-        supplies: ["IGA o Nesters Market (Banff) para el picnic."],
-        shops: ["Sunshine Village: góndola y day lodge."]
+        supplies: ["IGA o Nesters Market (Banff) para el picnic de Sunshine."],
+        shops: ["Sunshine Village: góndola y day lodge; Lake Louise Village."]
       },
-      photography: { spots: ["Praderas de Healy Pass", "Pharaoh Peaks", "Rock Isle Lake (Sunshine Meadows)"], goldenHour: "Mañana para las flores", drone: "⚠️ Prohibido en parque nacional." },
-      weather: { summary: "Valle templado; paso fresco y ventoso.", tempHigh: 20, tempLow: 7, conditions: "Sol con tormentas de tarde" },
-      clothing: ["Capas de trekking", "Protección solar + viento", "Polainas si hay barro"],
-      gear: ["Bear spray", "Bastones", "2 L de agua"],
-      optimization: ["Empezar a las 07:45: el paso de 18 km necesita margen antes de las tormentas.", "Si amenaza tormenta, quedarse en Sunshine Meadows (más bajo y seguro).", "Aguas termales al bajar: recuperación perfecta antes del último día de trek."],
-      routeCoords: [[51.1784, -115.5708], [51.1150, -115.7817], [51.0500, -115.8300]],
-      mapCenter: [51.11, -115.72], mapZoom: 11
+      photography: { spots: ["Rock Isle Lake (Sunshine)", "Lake Louise sin viento", "Moraine Lake desde el Rockpile (clásico)"], goldenHour: "Moraine con mejor luz a media tarde", drone: "⚠️ Prohibido en parque nacional." },
+      weather: { summary: "Valle templado; praderas frescas y ventosas.", tempHigh: 21, tempLow: 8, conditions: "Sol con nubes de tarde" },
+      clothing: ["Capas de trekking (mañana)", "Ropa cómoda para los lagos (tarde)", "Protección solar + viento"],
+      gear: ["Bear spray", "Reserva del shuttle a mano", "Cámara + polarizador"],
+      optimization: ["Sunshine Meadows compacto y temprano para NO perder el shuttle de las 14:00.", "Llegar al punto del shuttle 20–30 min antes.", "Moraine luce mejor a media tarde: el orden Louise → Moraine funciona con la luz."],
+      routeCoords: [[51.1784, -115.5708], [51.1150, -115.7817], [51.1784, -115.5708], [51.4254, -116.1773], [51.3217, -116.1860]],
+      mapCenter: [51.28, -115.90], mapZoom: 9
     },
     {
-      n: 6, date: "12 Ago", dow: "Martes", title: "Banff — Cory Pass / Cascade Amphitheatre", base: "Banff",
-      route: "Banff · Cory Pass / Cascade Amphitheatre",
-      routeStops: ["banff_town", "cory_pass", "cascade_amphitheatre"],
-      badge: "Trek final exigente",
-      summary: "El último gran trek: Cory Pass, uno de los senderos más exigentes de Banff frente a Mount Louis, o el circo glaciar de Cascade Amphitheatre como alternativa.",
-      drivingKm: 15, drivingTime: "≈30 min", hikingTime: "6–8 h", hikeName: "Cory Pass / Cascade Amphitheatre",
-      highlights: ["Aguja de Mount Louis (Cory Pass)", "Circo glaciar de Cascade Amphitheatre", "Vistas del Bow Valley"],
-      alerts: ["⚠️ Cory Pass: tramos expuestos y escalonados, orientación necesaria. No apto para principiantes ni con roca mojada.", "🐻 Zona de osos activa.", "⛰️ Elegir según clima: Cory Pass solo con buen tiempo; Cascade Amphitheatre como alternativa más segura."],
+      n: 7, date: "13 Ago", dow: "Miércoles", title: "Banff — Cory Pass / Cascade + Lake Minnewanka", base: "Banff",
+      route: "Banff · Cory Pass / Cascade Amphitheatre · Lake Minnewanka",
+      routeStops: ["banff_town", "cory_pass", "cascade_amphitheatre", "lake_minnewanka"],
+      badge: "Último gran trek",
+      lodging: { where: "Banff", nights: "Noche 3 de 3 · reservado", detail: "Camping reservado en Banff (última noche)." },
+      summary: "El último gran trek — Cory Pass (exigente) o Cascade Amphitheatre — y un cierre relajado en Lake Minnewanka, el mayor lago de Banff.",
+      drivingKm: 40, drivingTime: "≈45 min", hikingTime: "6–8 h", hikeName: "Cory Pass / Cascade Amphitheatre",
+      highlights: ["Aguja de Mount Louis (Cory Pass)", "Circo glaciar de Cascade Amphitheatre", "Lake Minnewanka", "Two Jack Lake con Mount Rundle"],
+      alerts: ["⚠️ Cory Pass: tramos expuestos y escalonados, orientación necesaria. No apto con roca mojada.", "🐻 Zona de osos activa; Minnewanka puede tener cierres puntuales.", "⛰️ Elegir según clima: Cory solo con buen tiempo; Cascade como alternativa más segura.", "💡 Healy Pass queda como otra opción si se prefiere praderas floridas."],
       schedule: [
-        { time: "06:30", icon: "☕", title: "Desayuno en Banff", detail: "" },
+        { time: "06:30", icon: "☕", title: "Desayuno en Banff", detail: "Whitebark Café o Wild Flour." },
         { time: "07:15", icon: "🚗", title: "Al trailhead", detail: "Fireside (Cory) o Mt Norquay (Cascade)." },
-        { time: "07:45", icon: "🥾", title: "Inicio del trek", detail: "Cory Pass (difícil) o Cascade Amphitheatre (moderado-exigente)." },
+        { time: "07:45", icon: "🥾", title: "Inicio del trek", detail: "Cory Pass (difícil) o Cascade Amphitheatre." },
         { time: "12:30", icon: "🍽️", title: "Paso / anfiteatro + almuerzo", detail: "Punto alto de la ruta." },
         { time: "15:30", icon: "🔙", title: "Regreso", detail: "" },
-        { time: "17:00", icon: "🚠", title: "Banff Gondola (opcional)", detail: "Atardecer desde Sulphur Mountain." },
-        { time: "19:30", icon: "🍽️", title: "Cena de despedida", detail: "Sky Bistro o The Maple Leaf." }
+        { time: "16:30", icon: "💧", title: "Lake Minnewanka / Two Jack", detail: "Paseo por la orilla; reflejos." },
+        { time: "17:30", icon: "♨️", title: "Banff Upper Hot Springs", detail: "Relax opcional." },
+        { time: "19:30", icon: "🍽️", title: "Cena de despedida", detail: "Sky Bistro (góndola) o The Maple Leaf." }
       ],
       food: {
         breakfast: "Whitebark Café o Wild Flour (Banff).",
@@ -489,59 +545,58 @@ window.ITINERARY = {
       logistics: {
         gas: ["Llenar en Banff."],
         supplies: ["IGA / Nesters Market (Banff)."],
-        shops: ["Tiendas de souvenirs en Banff Avenue."]
+        shops: ["Souvenirs de última hora en Banff Avenue."]
       },
-      photography: { spots: ["Torre de Mount Louis (Cory)", "Anfiteatro de Cascade", "Bow Valley desde Norquay", "Atardecer desde Banff Gondola"], goldenHour: "≈20:30 desde Sulphur Mountain", drone: "⚠️ Prohibido en parque nacional." },
+      photography: { spots: ["Torre de Mount Louis (Cory)", "Anfiteatro de Cascade", "Lake Minnewanka", "Two Jack Lake con Mount Rundle"], goldenHour: "≈20:30 desde Sulphur Mountain", drone: "⚠️ Prohibido en parque nacional." },
       weather: { summary: "Valle templado y estable.", tempHigh: 21, tempLow: 8, conditions: "Soleado" },
       clothing: ["Botas robustas", "Capas + cortavientos", "Bastones (Cory es empinado)"],
       gear: ["Bear spray", "Guantes para tramos rocosos", "2 L de agua"],
-      optimization: ["Decidir Cory vs Cascade según el parte del tiempo de la mañana.", "Cory Pass en sentido horario (subir por el paso, bajar por Edith) reduce el riesgo.", "Cerrar el viaje con góndola + atardecer si quedan fuerzas."],
-      routeCoords: [[51.1784, -115.5708], [51.2000, -115.6300], [51.2100, -115.6400]],
-      mapCenter: [51.21, -115.62], mapZoom: 12
+      optimization: ["Decidir Cory vs Cascade según el parte del tiempo de la mañana.", "Cory Pass en sentido horario reduce el riesgo.", "Cerrar con Minnewanka + aguas termales; góndola al atardecer si quedan fuerzas."],
+      routeCoords: [[51.1784, -115.5708], [51.2000, -115.6300], [51.2497, -115.4130], [51.1784, -115.5708]],
+      mapCenter: [51.21, -115.55], mapZoom: 11
     },
     {
-      n: 7, date: "13 Ago", dow: "Miércoles", title: "Banff → Calgary", base: "Calgary / regreso",
-      route: "Banff · Lake Minnewanka · Calgary",
-      routeStops: ["banff_town", "lake_minnewanka", "calgary"],
+      n: 8, date: "14 Ago", dow: "Jueves", title: "Banff → Calgary — devolución del auto 11:30", base: "Calgary / regreso",
+      route: "Banff · Canmore · Calgary (devolución auto 11:30)",
+      routeStops: ["banff_town", "calgary"],
       badge: "Cierre & regreso",
-      summary: "Mañana tranquila en Lake Minnewanka, el mayor lago de Banff, y regreso a Calgary para el vuelo de vuelta.",
-      drivingKm: 150, drivingTime: "≈2 h", hikingTime: "Paseo suave", hikeName: "Stewart Canyon (opcional)",
-      highlights: ["Lake Minnewanka", "Two Jack Lake (Mount Rundle)", "Regreso relajado"],
-      alerts: ["🕐 Dejar buffer amplio para devolución del auto + aeropuerto.", "🐻 Minnewanka puede tener cierres puntuales por osos — verificar.", "⛽ Repostar antes de devolver el vehículo."],
+      lodging: { where: "Fin del viaje", nights: "—", detail: "Devolución de la casa rodante a las 11:30 en Calgary y despedida de las Rocosas." },
+      summary: "Salida temprana de Banff para devolver el vehículo a las 11:30 en Calgary. Última mirada a las Rocosas antes de partir.",
+      drivingKm: 140, drivingTime: "≈1,5 h", hikingTime: "—", hikeName: null,
+      highlights: ["Amanecer en Vermilion Lakes / Two Jack", "Canmore", "Despedida de las Rocosas"],
+      alerts: ["⏰ DEVOLUCIÓN DEL AUTO 11:30 en Calgary — salir de Banff a más tardar 09:15.", "⛽ Repostar en Canmore o Calgary ANTES de entregar el vehículo.", "🧴 Descartar/regalar el bear spray (no se puede volar con él).", "📞 Confirmar hora y lugar exacto de la rentadora la noche anterior."],
       schedule: [
-        { time: "08:00", icon: "☕", title: "Desayuno y check-out", detail: "Banff." },
-        { time: "09:00", icon: "💧", title: "Lake Minnewanka", detail: "Crucero, paseo a Stewart Canyon o Two Jack Lake." },
-        { time: "12:00", icon: "🍽️", title: "Almuerzo en Canmore", detail: "Communitea o Rocky Mountain Bagel Co." },
-        { time: "13:30", icon: "🚗", title: "Ruta a Calgary", detail: "≈130 km / 1,5 h." },
-        { time: "15:00", icon: "⛽", title: "Combustible + devolución auto", detail: "Cargar antes de entregar." },
-        { time: "17:00", icon: "🛫", title: "Aeropuerto / vuelo", detail: "Check-in y despedida de las Rocosas." }
+        { time: "06:30", icon: "📸", title: "Amanecer (opcional)", detail: "Vermilion Lakes o Two Jack con Mount Rundle." },
+        { time: "07:30", icon: "☕", title: "Desayuno + check-out", detail: "Whitebark Café (Banff)." },
+        { time: "08:15", icon: "🛍️", title: "Últimos souvenirs / empacar", detail: "Dejar todo listo." },
+        { time: "09:15", icon: "🚗", title: "Salida de Banff", detail: "Máximo a las 09:15 para llegar a tiempo." },
+        { time: "10:15", icon: "⛽", title: "Canmore — café + combustible", detail: "Repostar antes de devolver." },
+        { time: "11:30", icon: "🔑", title: "Devolución del auto en Calgary", detail: "Entrega del vehículo (hora comprometida)." },
+        { time: "12:30", icon: "🛫", title: "Tarde libre / aeropuerto", detail: "Almuerzo y vuelo de regreso." }
       ],
       food: {
         breakfast: "Whitebark Café (Banff).",
-        lunch: "Communitea Café o Rocky Mountain Bagel Co (Canmore).",
+        lunch: "Canmore (Communitea, Rocky Mountain Bagel Co) o Calgary.",
         dinner: "Aeropuerto de Calgary / en vuelo.",
         bestDish: "Último Alberta beef antes de partir.",
         quick: "Rocky Mountain Bagel Co (Canmore).",
         premium: "The Grizzly Paw Brewing (Canmore)."
       },
       logistics: {
-        gas: ["Repostar en Canmore o Calgary antes de devolver el auto."],
+        gas: ["Repostar en Canmore o Calgary antes de la devolución (obligatorio)."],
         supplies: ["—"],
-        shops: ["Souvenirs de última hora en Banff Avenue."]
+        shops: ["Souvenirs de última hora en Banff Avenue / Canmore."]
       },
-      photography: { spots: ["Lake Minnewanka al amanecer", "Two Jack Lake con Mount Rundle", "Canmore"], goldenHour: "Amanecer (agua en calma)", drone: "⚠️ Prohibido en parque nacional." },
+      photography: { spots: ["Vermilion Lakes al amanecer", "Two Jack Lake con Mount Rundle", "Canmore"], goldenHour: "Amanecer ~06:00", drone: "⚠️ Prohibido en parque nacional." },
       weather: { summary: "Cálido y seco al bajar a la pradera.", tempHigh: 24, tempLow: 10, conditions: "Soleado" },
       clothing: ["Ropa casual + capa ligera", "Cómodo para el vuelo"],
-      gear: ["Documentos de vuelo listos", "Descartar/regalar el bear spray (no vuela)"],
-      optimization: ["Regla de oro: estar en el aeropuerto 3 h antes del vuelo internacional.", "Minnewanka temprano deja margen holgado para devolución + check-in.", "Two Jack Lake como plan B si Minnewanka está cerrado."],
-      routeCoords: [[51.1784, -115.5708], [51.2497, -115.4130], [51.1784, -115.5708], [51.0890, -115.3590], [51.0447, -114.0719]],
+      gear: ["Documentos de vuelo listos", "Descartar el bear spray (no vuela)"],
+      optimization: ["Regla de oro: salir de Banff 09:15 máximo para la devolución 11:30.", "Repostar en Canmore para no perder tiempo cerca del aeropuerto.", "Empacar todo la noche anterior; amanecer en Vermilion Lakes solo si se madruga."],
+      routeCoords: [[51.1784, -115.5708], [51.0890, -115.3590], [51.0447, -114.0719]],
       mapCenter: [51.12, -114.85], mapZoom: 9
     }
   ],
 
-  /* ---------------------------------------------------------------
-     VIDEOS — verified via YouTube oembed. Local thumbnails + QR.
-     --------------------------------------------------------------- */
   videos: [
     { id: "zzMo2dy7mNY", title: "The Rockies | Cinematic Drone 4K Video", channel: "stoked tour", duration: "4:05", reason: "Montaje aéreo 4K que fija el tono premium e inspirador del viaje.", topic: "Cinematográfico" },
     { id: "GmTK37bQUC0", title: "Banff to Jasper on the Icefields Parkway 🇨🇦", channel: "Tom and Nikki Travel", duration: "18:42", reason: "Recorrido en primera persona por las paradas clave de la Parkway con tips prácticos.", topic: "Icefields Parkway" },
@@ -660,19 +715,19 @@ window.ITINERARY = {
 
   /* Estimated budget (reference only) */
   budget: {
-    note: "Cifras aproximadas y solo referenciales, en CAD (dólar canadiense), alta temporada, para 4 viajeros. No incluye vuelos internacionales. Auto, combustible y pase de parques son por vehículo; comida, actividades y seguro son por persona.",
+    note: "Cifras aproximadas y solo referenciales, en CAD (dólar canadiense), alta temporada, para 4 viajeros en casa rodante (motorhome). No incluye vuelos internacionales. La mayoría de los campings ya están reservados (falta el del 7 de agosto).",
     currency: "CAD",
     items: [
-      { concept: "Alquiler de auto (SUV grande/AWD, 8 días)", est: 1400 },
-      { concept: "Combustible (≈1.190 km · 1 vehículo)", est: 250 },
-      { concept: "Alojamiento (7 noches · 2 habitaciones · Calgary/Jasper/Banff)", est: 4800 },
+      { concept: "Alquiler de casa rodante (motorhome, 9 días)", est: 3200 },
+      { concept: "Combustible (≈1.320 km · la RV consume más)", est: 450 },
+      { concept: "Campings / sitios de RV (8 noches, con hookups)", est: 550 },
       { concept: "Parks Canada (Discovery Pass · cubre el vehículo)", est: 200 },
-      { concept: "Comida (≈8 días · 4 pax)", est: 1800 },
-      { concept: "Actividades (Ice Explorer, cruceros, góndola · 4 pax)", est: 1100 },
+      { concept: "Comida (≈9 días · cocina a bordo + salidas)", est: 1500 },
+      { concept: "Actividades (Ice Explorer, crucero Maligne, shuttle Moraine, góndola)", est: 1200 },
       { concept: "Bear spray + equipo (2 unidades)", est: 200 },
       { concept: "Seguro de viaje (4 pax)", est: 450 }
     ],
-    total: 10200
+    total: 7750
   },
 
   /* Restaurant directory by city (used in PDF) */

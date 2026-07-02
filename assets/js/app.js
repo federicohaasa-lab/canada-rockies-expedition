@@ -254,7 +254,16 @@
 
     const highlights = `<div class="block"><h4>✨ Highlights</h4><div class="tag-list">${d.highlights.map(h => `<span class="tag">${esc(h)}</span>`).join("")}</div></div>`;
 
-    return sched + `<div class="day-grid" style="margin-top:18px">` + hike + highlights + food + logi + photo + weather + gear + alerts + `</div>`;
+    const lodge = d.lodging ? (() => {
+      const warn = /sin reservar|por confirmar/i.test(d.lodging.nights || "");
+      return `<div class="block span2 lodge-block${warn ? " warn" : ""}"><h4>🚐 Alojamiento · casa rodante</h4>
+        <div class="lodge-row"><b>${esc(d.lodging.where)}</b>${d.lodging.nights ? `<span class="lodge-nights">${esc(d.lodging.nights)}</span>` : ""}</div>
+        ${d.lodging.detail ? `<p class="lodge-detail">${esc(d.lodging.detail)}</p>` : ""}
+        ${d.lodging.options ? `<ul class="lodge-opts">${d.lodging.options.map(o => `<li>${esc(o)}</li>`).join("")}</ul>` : ""}
+      </div>`;
+    })() : "";
+
+    return sched + `<div class="day-grid" style="margin-top:18px">` + lodge + hike + highlights + food + logi + photo + weather + gear + alerts + `</div>`;
   }
   function renderDays() {
     $("#daysList").innerHTML = D.days.map(d => `

@@ -4,6 +4,13 @@ Experiencia de viaje digital premium (estilo Apple × Airbnb × National Geograp
 expedición de 8 días por las Rocosas canadienses: **Calgary · Jasper · Banff** a lo largo de la
 **Icefields Parkway**, con desvío a **Mount Robson**.
 
+## 🌐 Link en vivo (para enviar a cualquier persona)
+
+**https://federicohaasa-lab.github.io/canada-rockies-expedition/**
+
+Se abre completo en cualquier navegador (celular o computador), sin instalar nada. Comparte ese link y listo.
+El PDF también está disponible online: `…/canada-rockies-expedition/CANADA_ROCKIES_EXPEDITION.pdf`
+
 > El itinerario original **no se modificó**: rutas, días y trekkings se mantienen exactamente como
 > fueron entregados. Todo lo demás (horarios sugeridos, comida, logística, fotografía, alertas,
 > equipo, presupuesto y restaurantes) es una **capa premium añadida**.
