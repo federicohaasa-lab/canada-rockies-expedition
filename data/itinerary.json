@@ -424,7 +424,7 @@
       "credit": "Jess Wood / Wikimedia Commons",
       "short": "Panorámica 360° sobre el Maligne Lake.",
       "description": "Ascenso desde Maligne Lake a una cresta pelada con vistas de 360° sobre el lago, los Queen Elizabeth Ranges y los glaciares circundantes. Uno de los miradores más completos de Jasper.",
-      "duration": "4–6 h · ≈10,4 km · +490 m",
+      "duration": "5–7 h · ≈10–12 km · +490 m",
       "difficulty": "Moderado",
       "bestTime": "Mañana (tormentas por la tarde)",
       "photoTips": "Cresta alta con el Maligne Lake de fondo; teleobjetivo para comprimir capas de montañas.",
@@ -1106,8 +1106,64 @@
       "summary": "Ascenso a Bald Hills para una panorámica de 360° sobre el Maligne Lake, seguido del crucero a la mítica Spirit Island.",
       "drivingKm": 96,
       "drivingTime": "≈2 h",
-      "hikingTime": "4–6 h",
-      "hikeName": "Bald Hills",
+      "hikingTime": "5–7 h",
+      "hikeName": "Bald Hills (recomendado)",
+      "alternatives": {
+        "title": "Alternativas de hike en Jasper · estado ago 2026",
+        "recommended": "Bald Hills",
+        "note": "Los 2 días de Jasper (9 y 10 ago) son flexibles: elige según energía y clima. Verificar cierres en Parks Canada el día antes — siguen levantando restricciones puntuales.",
+        "items": [
+          {
+            "name": "Bald Hills",
+            "dist": "10–12 km",
+            "hours": "5–7 h",
+            "diff": "Moderado",
+            "status": "Abierto"
+          },
+          {
+            "name": "Sulphur Skyline",
+            "dist": "9 km",
+            "hours": "4–5 h",
+            "diff": "Exigente",
+            "status": "Abierto"
+          },
+          {
+            "name": "Skyline (tramo)",
+            "dist": "~14 km",
+            "hours": "6 h",
+            "diff": "Moderado",
+            "status": "Abierto"
+          },
+          {
+            "name": "Opal Hills",
+            "dist": "8 km",
+            "hours": "3–4 h",
+            "diff": "Exigente",
+            "status": "Abierto"
+          },
+          {
+            "name": "Valley of Five Lakes",
+            "dist": "4,5 km",
+            "hours": "1,5 h",
+            "diff": "Fácil",
+            "status": "Reabierto"
+          },
+          {
+            "name": "Cavell Meadows",
+            "dist": "—",
+            "hours": "—",
+            "diff": "—",
+            "status": "Cerrado"
+          },
+          {
+            "name": "Maligne Canyon",
+            "dist": "—",
+            "hours": "—",
+            "diff": "—",
+            "status": "Cerrado"
+          }
+        ]
+      },
       "highlights": [
         "Panorámica 360° desde Bald Hills",
         "Spirit Island (crucero)",
@@ -1117,7 +1173,8 @@
       "alerts": [
         "🦌 Maligne Road: fauna abundante (caribú, alce, oso). Conducir despacio al amanecer/atardecer.",
         "⛵ Crucero a Spirit Island: reservar con antelación.",
-        "⛈️ Tormentas por la tarde en la cresta — hacer Bald Hills por la mañana."
+        "🚧 Cerrados en 2026: Cavell Meadows y Maligne Canyon — verificar estado en Parks Canada el día antes.",
+        "🐻 Temporada de bayas: osos activos — bear spray siempre."
       ],
       "schedule": [
         {
@@ -1242,9 +1299,9 @@
       "n": 4,
       "date": "10 Ago",
       "dow": "Domingo",
-      "title": "Jasper — día flexible de montaña",
+      "title": "Jasper — día flexible · favorito Valley of Five Lakes",
       "base": "Jasper",
-      "route": "Jasper y alrededores (a elección)",
+      "route": "Jasper · Valley of Five Lakes · alternativas (Sulphur Skyline · Miette…)",
       "routeStops": [
         "jasper_town"
       ],
@@ -1254,23 +1311,78 @@
         "nights": "Noche 3 de 3 · reservado",
         "detail": "Camping reservado en Jasper (última noche)."
       },
-      "summary": "Día para elegir según energía y clima: hikes locales, cañones, lagos, aguas termales o descanso. Jasper es Reserva de Cielo Oscuro — noche ideal para la Vía Láctea.",
-      "drivingKm": 70,
+      "summary": "Día flexible en Jasper. Vuestra elección probable ⭐: Valley of Five Lakes (corto y suave, cinco lagos turquesa). Alternativa de mayor esfuerzo/recompensa: Sulphur Skyline + Miette Hot Springs. Noche ideal de Cielo Oscuro (Vía Láctea).",
+      "drivingKm": 60,
       "drivingTime": "≈1,5 h",
-      "hikingTime": "3–6 h (opcional)",
-      "hikeName": "Opciones en Jasper",
+      "hikingTime": "1,5–5 h (según elección)",
+      "hikeName": "Valley of Five Lakes (favorito)",
+      "alternatives": {
+        "title": "Alternativas de hike en Jasper · estado ago 2026",
+        "recommended": "Valley of Five Lakes",
+        "note": "Los 2 días de Jasper (9 y 10 ago) son flexibles: elige según energía y clima. ⭐ = vuestro favorito probable. Verificar cierres en Parks Canada el día antes — siguen levantando restricciones puntuales.",
+        "items": [
+          {
+            "name": "Bald Hills",
+            "dist": "10–12 km",
+            "hours": "5–7 h",
+            "diff": "Moderado",
+            "status": "Abierto"
+          },
+          {
+            "name": "Sulphur Skyline",
+            "dist": "9 km",
+            "hours": "4–5 h",
+            "diff": "Exigente",
+            "status": "Abierto"
+          },
+          {
+            "name": "Skyline (tramo)",
+            "dist": "~14 km",
+            "hours": "6 h",
+            "diff": "Moderado",
+            "status": "Abierto"
+          },
+          {
+            "name": "Opal Hills",
+            "dist": "8 km",
+            "hours": "3–4 h",
+            "diff": "Exigente",
+            "status": "Abierto"
+          },
+          {
+            "name": "Valley of Five Lakes",
+            "dist": "4,5 km",
+            "hours": "1,5 h",
+            "diff": "Fácil",
+            "status": "Reabierto"
+          },
+          {
+            "name": "Cavell Meadows",
+            "dist": "—",
+            "hours": "—",
+            "diff": "—",
+            "status": "Cerrado"
+          },
+          {
+            "name": "Maligne Canyon",
+            "dist": "—",
+            "hours": "—",
+            "diff": "—",
+            "status": "Cerrado"
+          }
+        ]
+      },
       "highlights": [
-        "Sulphur Skyline + Miette Hot Springs",
-        "Valley of Five Lakes",
-        "Edith Cavell / Cavell Meadows",
-        "Maligne Canyon",
+        "⭐ Valley of Five Lakes (4,5 km · fácil)",
+        "Alt: Sulphur Skyline (9 km · exigente) + Miette Hot Springs",
         "Pyramid Lake al amanecer",
         "Cielo oscuro — Vía Láctea"
       ],
       "alerts": [
-        "🐻 Zona de osos activa en todos los senderos.",
-        "🎫 Reservar con antelación cualquier actividad (aguas termales, tours).",
-        "🌡️ Miette Hot Springs cierra temprano — verificar horario."
+        "🐻 Temporada de bayas (agosto): osos activos — bear spray en todos los senderos.",
+        "🚧 CERRADOS en 2026: Cavell Meadows y Maligne Canyon — verificar cierres en Parks Canada el día antes.",
+        "🌡️ Miette Hot Springs cierra temprano — verificar horario.",
+        "🎫 Reservar con antelación cualquier actividad."
       ],
       "schedule": [
         {
@@ -1281,24 +1393,24 @@
         },
         {
           "time": "09:30",
-          "icon": "🥾",
-          "title": "Opción A · Sulphur Skyline",
-          "detail": "Ascenso con vistas + relax en Miette Hot Springs."
-        },
-        {
-          "time": "09:30",
           "icon": "🏞️",
-          "title": "Opción B · Valley of Five Lakes",
-          "detail": "Lagos turquesa + Maligne Canyon; hike suave."
+          "title": "Valley of Five Lakes ⭐ (favorito)",
+          "detail": "4,5 km · fácil · 1,5 h; cinco lagos de distinto turquesa."
         },
         {
-          "time": "14:00",
-          "icon": "🌸",
-          "title": "Opción C · Edith Cavell / Cavell Meadows",
-          "detail": "Glaciar Angel + praderas de flores."
+          "time": "11:30",
+          "icon": "🥾",
+          "title": "Opción de mayor esfuerzo",
+          "detail": "Sulphur Skyline (9 km · exigente · 4–5 h) si quieren un gran hike."
         },
         {
-          "time": "17:00",
+          "time": "13:30",
+          "icon": "♨️",
+          "title": "Miette Hot Springs",
+          "detail": "Relax en las aguas termales más calientes de las Rocosas."
+        },
+        {
+          "time": "17:30",
           "icon": "📸",
           "title": "Pyramid Lake / Patricia Lake",
           "detail": "Atardecer y reflejos."

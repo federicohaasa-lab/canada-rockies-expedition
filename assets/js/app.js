@@ -263,7 +263,12 @@
       </div>`;
     })() : "";
 
-    return sched + `<div class="day-grid" style="margin-top:18px">` + lodge + hike + highlights + food + logi + photo + weather + gear + alerts + `</div>`;
+    const alt = d.alternatives ? `<div class="block span2 alt-block"><h4>🥾 ${esc(d.alternatives.title)}</h4>
+      <table class="alt-table"><thead><tr><th>Trek</th><th>Dist.</th><th>Tiempo</th><th>Dif.</th><th>Estado</th></tr></thead><tbody>${
+        d.alternatives.items.map(it => { const rec = it.name === d.alternatives.recommended, closed = /cerrad/i.test(it.status); return `<tr class="${rec ? "rec" : ""}${closed ? " closed" : ""}"><td>${rec ? "⭐ " : ""}${esc(it.name)}</td><td>${esc(it.dist)}</td><td>${esc(it.hours)}</td><td>${esc(it.diff)}</td><td><span class="alt-status ${closed ? "no" : "ok"}">${esc(it.status)}</span></td></tr>`; }).join("")
+      }</tbody></table>${d.alternatives.note ? `<p class="alt-note">${esc(d.alternatives.note)}</p>` : ""}</div>` : "";
+
+    return sched + `<div class="day-grid" style="margin-top:18px">` + lodge + alt + hike + highlights + food + logi + photo + weather + gear + alerts + `</div>`;
   }
   function renderDays() {
     $("#daysList").innerHTML = D.days.map(d => `

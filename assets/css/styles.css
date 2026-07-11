@@ -500,3 +500,17 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spa
 .lodge-opts{list-style:none;margin-top:11px;display:grid;gap:7px}
 .lodge-opts li{font-size:13px;color:var(--text);padding-left:22px;position:relative;line-height:1.45}
 .lodge-opts li::before{content:"⛺";position:absolute;left:0}
+
+/* Jasper hike alternatives table */
+.alt-block{background:var(--snow)}
+.alt-table{width:100%;border-collapse:collapse;margin-top:4px;font-size:13px}
+.alt-table th{text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--text-faint);font-weight:750;padding:6px 8px;border-bottom:1px solid var(--line)}
+.alt-table td{padding:7px 8px;border-bottom:1px solid var(--line);color:var(--text)}
+.alt-table tbody tr:last-child td{border-bottom:none}
+.alt-table tr.rec td{background:rgba(46,127,184,.09);font-weight:700}
+.alt-table tr.closed td{opacity:.55}
+.alt-table tr.closed td:first-child{text-decoration:line-through}
+.alt-status{font-size:11px;font-weight:700;padding:2px 9px;border-radius:var(--r-full);white-space:nowrap}
+.alt-status.ok{background:#e7f6ec;color:#15803d}
+.alt-status.no{background:#fdecec;color:#b91c1c}
+.alt-note{font-size:12.5px;color:var(--text-muted);margin-top:11px;font-style:italic;line-height:1.5}

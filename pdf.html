@@ -107,6 +107,12 @@ img{display:block}
 .wchip .wd{font-size:9px;font-weight:600;color:var(--ink2)}
 .alerts{list-style:none}
 .alerts li{font-size:9px;background:#fff8f4;border:1px solid #ffe0d3;border-left:3px solid #f97316;border-radius:8px;padding:6px 9px;margin-bottom:5px}
+.alt-t{width:100%;border-collapse:collapse;font-size:8.6px;margin-top:2px}
+.alt-t th{text-align:left;font-size:7px;text-transform:uppercase;letter-spacing:.05em;color:var(--faint);font-weight:750;padding:4px 5px;border-bottom:1px solid var(--line)}
+.alt-t td{padding:4px 5px;border-bottom:1px solid var(--line)}
+.alt-t td.r,.alt-t th.r{text-align:right}
+.alt-t tr.rec td{background:#eaf3f7;font-weight:750}
+.alt-t tr.cl td{color:#9fb0bd;text-decoration:line-through}
 
 /* ---------- GALLERY / GRIDS ---------- */
 .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:4px}
@@ -221,6 +227,7 @@ img{display:block}
     var pic=heroImg(d);
     var left='<div class="card"><h4>🕘 Itinerario sugerido</h4><ul class="sched">'+
       d.schedule.map(function(s){return '<li><div class="t">'+esc(s.time)+'</div><div class="c"><b>'+s.icon+' '+esc(s.title)+'</b>'+(s.detail?'<span>'+esc(s.detail)+'</span>':"")+'</div></li>';}).join("")+'</ul></div>';
+    if(d.alternatives) left+='<div class="card"><h4>🥾 '+esc(d.alternatives.title)+'</h4><table class="alt-t"><tr><th>Trek</th><th class="r">Dist</th><th class="r">Tiempo</th><th>Dif</th><th>Estado</th></tr>'+d.alternatives.items.map(function(it){var rec=it.name===d.alternatives.recommended;var closed=/cerrad/i.test(it.status);return '<tr class="'+(rec?'rec':'')+(closed?' cl':'')+'"><td>'+(rec?'★ ':'')+esc(it.name)+'</td><td class="r">'+esc(it.dist)+'</td><td class="r">'+esc(it.hours)+'</td><td>'+esc(it.diff)+'</td><td>'+esc(it.status)+'</td></tr>';}).join('')+'</table>'+(d.alternatives.note?'<p style="font-size:8.5px;color:#5a7183;margin-top:6px;font-style:italic;line-height:1.35">'+esc(d.alternatives.note)+'</p>':'')+'</div>';
     if(d.alerts&&d.alerts.length) left+='<div class="card"><h4>⚠️ Alertas & operativa</h4><ul class="alerts">'+d.alerts.map(function(a){return '<li>'+esc(a)+'</li>';}).join("")+'</ul></div>';
 
     var lodge = d.lodging ? '<div class="card" style="'+(/sin reservar|por confirmar/i.test(d.lodging.nights||'')?'background:#fff8f1;border-color:#ffe0c2':'background:#eef6f9;border-color:#d6e6ee')+'"><h4>🚐 Alojamiento · casa rodante</h4><div class="kv"><div class="r"><b>'+esc(d.lodging.where)+(d.lodging.nights?' · '+esc(d.lodging.nights):'')+'</b>'+(d.lodging.detail?esc(d.lodging.detail):'')+'</div></div>'+(d.lodging.options?'<div class="chips" style="margin-top:6px">'+d.lodging.options.map(function(o){return '<span class="chip">⛺ '+esc(o)+'</span>';}).join('')+'</div>':'')+'</div>' : '';
