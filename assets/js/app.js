@@ -348,13 +348,37 @@
         </div>
         <div class="vid-body">
           <h3>${esc(v.title)}</h3>
-          <div class="vid-chan">▷ ${esc(v.channel)}</div>
+          <div class="vid-chan">▷ ${esc(v.channel)}${v.views ? ` · <span class="vid-views">${fmtViews(v.views)}</span>` : ""}</div>
           <p class="vid-reason">${esc(v.reason)}</p>
         </div>
       </article>`).join("");
     $("#vidGrid").addEventListener("click", e => {
       const c = e.target.closest("[data-vid]"); if (c) openVideo(c.dataset.vid);
     });
+  }
+  function fmtViews(n) { return (n >= 1000000 ? (n / 1000000).toFixed(1).replace(/\.0$/, "") + " M" : n >= 1000 ? Math.round(n / 1000) + " k" : n) + " vistas"; }
+
+  /* ---------------------------------------------------------------- EXTRAS (paradas opcionales) */
+  const XT = { lake: ["💧", "Lago"], canyon: ["🏞️", "Cañón"], waterfall: ["💦", "Cascada"], viewpoint: ["📷", "Mirador"], glacier: ["🧊", "Glaciar"], hike: ["🥾", "Caminata"], other: ["📍", "Punto"] };
+  function extraCard(e) {
+    const t = XT[e.type] || XT.other;
+    return `<article class="extra-card">
+      <div class="extra-top"><span class="extra-type">${t[0]} ${t[1]}</span><span class="extra-time">⏱ ${esc(e.timeNeeded)}</span></div>
+      <h4>${esc(e.name)}</h4>
+      <p class="extra-desc">${esc(e.description)}</p>
+      <div class="extra-kv"><div><b>Cómo verlo</b> ${esc(e.howToVisit)}</div><div><b>Por qué vale</b> ${esc(e.whyWorth)}</div></div>
+      <a class="extra-map" href="https://www.google.com/maps/search/?api=1&query=${e.coords[0]},${e.coords[1]}" target="_blank" rel="noopener">📍 Ver en Google Maps</a>
+    </article>`;
+  }
+  function renderExtras() {
+    if (!D.extras || !D.extras.length) return;
+    const byDay = {};
+    D.extras.forEach(e => { (byDay[e.day] = byDay[e.day] || []).push(e); });
+    $("#extrasGrid").innerHTML = Object.keys(byDay).sort((a, b) => a - b).map(day => {
+      const di = D.days.find(d => d.n === +day) || { date: "", title: "" };
+      return `<div class="extra-group reveal"><h3 class="extra-day"><span class="extra-daynum">Día ${day}</span> ${esc(di.date)} · ${esc(di.title)}</h3>
+        <div class="extra-cards">${byDay[day].map(extraCard).join("")}</div></div>`;
+    }).join("");
   }
 
   /* ---------------------------------------------------------------- RECOMMENDATIONS + LAYERS */
@@ -470,7 +494,7 @@
   /* ---------------------------------------------------------------- BOOT */
   document.addEventListener("DOMContentLoaded", () => {
     renderHero(); renderStats(); renderTimeline(); renderDays();
-    renderAttractions(); renderVideos(); renderRecs();
+    renderAttractions(); renderVideos(); renderRecs(); renderExtras();
     initNav(); initParallax();
     if (window.L) { try { renderMap(); } catch (e) { console.error("Map error", e); $("#map").innerHTML = '<div style="color:#fff;padding:40px;text-align:center">Mapa no disponible sin conexión.</div>'; } }
     initReveal();

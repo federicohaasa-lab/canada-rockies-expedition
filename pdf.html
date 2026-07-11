@@ -162,6 +162,16 @@ img{display:block}
 .qr .tp{font-size:7.5px;font-weight:750;text-transform:uppercase;letter-spacing:.06em;color:var(--glacier)}
 .qr h5{font-family:var(--serif);font-size:10px;margin-top:3px;line-height:1.2;color:var(--ink)}
 .qr .ch{font-size:8px;color:var(--muted);margin-top:3px}
+.xgroup{margin-bottom:11px;break-inside:avoid}
+.xday{font-family:var(--serif);font-size:12px;color:var(--glacier);border-bottom:1px solid var(--line);padding-bottom:4px;margin-bottom:7px}
+.xcards{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.xcard{border:1px solid var(--line);border-radius:9px;padding:8px 10px;break-inside:avoid}
+.xtop{display:flex;justify-content:space-between;gap:6px;align-items:baseline}
+.xtop b{font-size:10px;color:var(--ink)}
+.xtop span{font-size:7.5px;color:var(--faint);white-space:nowrap}
+.xcard p{font-size:8.3px;color:var(--muted);margin-top:3px;line-height:1.32}
+.xhow{font-size:8px;color:var(--text);margin-top:4px}
+.xhow b{color:var(--glacier)}
 
 /* ---------- BACK ---------- */
 .back{background:var(--ink);color:rgba(255,255,255,.8);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
@@ -289,9 +299,26 @@ img{display:block}
   });
 
   /* VIDEOS / QR */
-  P("",'<div class="eyebrow">08 · Videos</div><h1 class="sec-title">Míralo antes de vivirlo</h1><div class="divider"></div>'+
-    '<p class="sec-lead">Escanea los códigos para ver cada video en YouTube.</p>'+
-    '<div class="qr-grid" style="margin-top:14px">'+D.videos.map(function(v){return '<div class="qr"><img src="assets/img/qr/'+esc(v.id)+'.png" alt="QR: '+esc(v.title)+'"><div class="tp">'+esc(v.topic)+'</div><h5>'+esc(v.title)+'</h5><div class="ch">▷ '+esc(v.channel)+' · '+esc(v.duration)+'</div></div>';}).join("")+'</div>'+
+  function fmtv(n){return n>=1000000?(n/1000000).toFixed(1).replace(/\.0$/,'')+' M vistas':n>=1000?Math.round(n/1000)+' k vistas':n+' vistas';}
+
+  /* EXTRAS · paradas opcionales */
+  if(D.extras&&D.extras.length){
+    var xByDay={}; D.extras.forEach(function(e){(xByDay[e.day]=xByDay[e.day]||[]).push(e);});
+    var xGroups=Object.keys(xByDay).sort(function(a,b){return a-b;}).map(function(day){
+      var di=D.days.find(function(d){return d.n===+day;})||{date:'',title:''};
+      var cards=xByDay[day].map(function(e){return '<div class="xcard"><div class="xtop"><b>'+esc(e.name)+'</b><span>'+esc(e.timeNeeded)+'</span></div><p>'+esc(e.description)+'</p><div class="xhow"><b>Cómo verlo:</b> '+esc(e.howToVisit)+'</div></div>';}).join('');
+      return '<div class="xgroup"><div class="xday">Día '+day+' · '+esc(di.date)+' — '+esc(di.title)+'</div><div class="xcards">'+cards+'</div></div>';
+    });
+    var xhalf=Math.ceil(xGroups.length/2);
+    [xGroups.slice(0,xhalf).join(''), xGroups.slice(xhalf).join('')].forEach(function(html,pi){
+      if(!html) return;
+      P("",'<div class="eyebrow">08 · Paradas opcionales</div><h1 class="sec-title">'+(pi===0?'Extras para sumar a la ruta':'Paradas opcionales · continuación')+'</h1><div class="divider"></div>'+html+footer('Paradas opcionales'));
+    });
+  }
+
+  P("",'<div class="eyebrow">09 · Videos</div><h1 class="sec-title">Míralo antes de vivirlo</h1><div class="divider"></div>'+
+    '<p class="sec-lead">Escanea los códigos para ver cada video en YouTube (elegidos por número de vistas).</p>'+
+    '<div class="qr-grid" style="margin-top:14px">'+D.videos.map(function(v){return '<div class="qr"><img src="assets/img/qr/'+esc(v.id)+'.png" alt="QR: '+esc(v.title)+'"><div class="tp">'+esc(v.topic)+'</div><h5>'+esc(v.title)+'</h5><div class="ch">▷ '+esc(v.channel)+(v.views?' · '+fmtv(v.views):'')+'</div></div>';}).join("")+'</div>'+
     footer("Videos · códigos QR"));
 
   /* BACK COVER */

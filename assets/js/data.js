@@ -464,20 +464,20 @@ window.ITINERARY = {
       routeStops: ["jasper_town", "columbia_icefield", "wilcox_pass", "peyto_lake", "banff_town"],
       badge: "Icefield + trek + traslado",
       lodging: { where: "Banff", nights: "Noche 1 de 3 · reservado", detail: "Camping reservado en Banff — 3 noches (11·12·13). Tunnel Mountain / Two Jack Lakeside." },
-      summary: "Ice Explorer a las 11:30 (el 'camión' glaciar sobre el Athabasca) y, por la tarde, el trek de Wilcox Pass (a 3 km, con la mejor vista frontal del glaciar). Regreso escénico por la Icefields Parkway hasta Banff, con llegada al anochecer (~21:00). Día largo pero factible.",
+      summary: "Ice Explorer a las 12:00 (el 'camión' glaciar sobre el Athabasca) y, por la tarde, el trek de Wilcox Pass (a 3 km, con la mejor vista frontal del glaciar). Regreso escénico por la Icefields Parkway hasta Banff, con llegada al anochecer (~21:30). Día largo pero factible.",
       drivingKm: 290, drivingTime: "≈4 h", hikingTime: "3–4 h", hikeName: "Wilcox Pass (tarde)",
-      highlights: ["Ice Explorer 11:30 sobre el Athabasca Glacier (el 'camión')", "Trek Wilcox Pass · vista frontal del glaciar", "Bow Lake · Peyto (2ª oportunidad)", "Praderas alpinas con bighorn"],
-      alerts: ["🎫 Ice Explorer confirmado 11:30 — llegar al Icefield Centre con 20–30 min de margen.", "⏳ Sí alcanza, pero es día largo: Ice Explorer 11:30 → Wilcox (tarde) → ~3 h de ruta = llegada a Banff ~21:00. Ideal cocinar en la RV o cena tardía.", "🥾 Para no llegar muy tarde: hacer Wilcox estándar hasta el paso (~3 h) y saltarse el Skywalk.", "⛽ Llenar en Jasper — tramo largo con poco servicio.", "🐏 Wilcox: praderas con bighorn; expuesto y ventoso arriba."],
+      highlights: ["Ice Explorer 12:00 sobre el Athabasca Glacier (el 'camión')", "Trek Wilcox Pass · vista frontal del glaciar", "Bow Lake · Peyto (2ª oportunidad)", "Praderas alpinas con bighorn"],
+      alerts: ["🎫 Ice Explorer confirmado 12:00 — llegar al Icefield Centre con 20–30 min de margen.", "⏳ Sí alcanza, pero es día largo: Ice Explorer 12:00 → Wilcox (tarde) → ~3 h de ruta = llegada a Banff ~21:30. Ideal cocinar en la RV.", "🥾 Para no llegar tan tarde: hacer Wilcox estándar hasta el paso (~2,5–3 h) y saltarse el Skywalk.", "⛽ Llenar en Jasper — tramo largo con poco servicio.", "🐏 Wilcox: praderas con bighorn; expuesto y ventoso arriba."],
       schedule: [
-        { time: "08:30", icon: "🚗", title: "Check-out y salida de Jasper", detail: "Desayuno y rumbo sur (≈105 km al Icefield)." },
-        { time: "10:30", icon: "🧊", title: "Llegada al Columbia Icefield", detail: "Estacionar la casa rodante; café y check-in del tour." },
-        { time: "11:30", icon: "🚛", title: "Ice Explorer sobre el glaciar", detail: "El 'camión' glaciar sobre el Athabasca (turno 11:30). ≈1,5–2 h." },
-        { time: "13:30", icon: "🍽️", title: "Almuerzo en el Icefield Centre", detail: "Comer y repostar antes del trek." },
-        { time: "14:15", icon: "🥾", title: "Trek Wilcox Pass", detail: "Trailhead a 3 km (Wilcox Creek) · 8 km · 3–4 h · vista frontal del glaciar." },
-        { time: "17:45", icon: "🔙", title: "Fin del trek", detail: "" },
-        { time: "18:00", icon: "🚗", title: "Ruta a Banff", detail: "≈185 km / ~3 h; Bow Lake y Peyto (2ª oportunidad)." },
-        { time: "20:45", icon: "🏨", title: "Llegada a Banff", detail: "Al anochecer (luz de verano hasta ~21:00)." },
-        { time: "21:00", icon: "🍽️", title: "Cena en Banff / RV", detail: "Cocinar en la casa rodante o algo con cocina hasta tarde." }
+        { time: "09:00", icon: "🚗", title: "Check-out y salida de Jasper", detail: "Sin prisa (Ice Explorer al mediodía); ≈105 km al Icefield." },
+        { time: "11:00", icon: "🧊", title: "Llegada al Columbia Icefield", detail: "Estacionar la casa rodante; café y check-in del tour." },
+        { time: "12:00", icon: "🚛", title: "Ice Explorer sobre el glaciar", detail: "El 'camión' glaciar sobre el Athabasca (turno 12:00). ≈1,5–2 h." },
+        { time: "14:00", icon: "🍽️", title: "Almuerzo en el Icefield Centre", detail: "Comer y repostar antes del trek." },
+        { time: "14:45", icon: "🥾", title: "Trek Wilcox Pass", detail: "Trailhead a 3 km (Wilcox Creek) · 8 km · 3–4 h · vista frontal del glaciar." },
+        { time: "18:15", icon: "🔙", title: "Fin del trek", detail: "" },
+        { time: "18:30", icon: "🚗", title: "Ruta a Banff", detail: "≈185 km / ~3 h; Bow Lake y Peyto (2ª oportunidad)." },
+        { time: "21:15", icon: "🏨", title: "Llegada a Banff", detail: "Al anochecer (cae la luz ~21:00)." },
+        { time: "21:30", icon: "🍽️", title: "Cena en la RV", detail: "Cocinar en la casa rodante." }
       ],
       food: {
         breakfast: "Bear's Paw Bakery (Jasper), temprano.",
@@ -496,7 +496,7 @@ window.ITINERARY = {
       weather: { summary: "Frío y ventoso en el paso; agradable en el valle.", tempHigh: 20, tempLow: 6, conditions: "Ventoso en altura" },
       clothing: ["Capas de trekking", "Cortavientos / impermeable", "Guantes ligeros para el paso"],
       gear: ["Bear spray", "Agua 2 L", "Cargador de auto para el trayecto largo"],
-      optimization: ["Con el Ice Explorer a las 11:30 no hay que madrugar: salir de Jasper ~08:30.", "Wilcox trailhead está a solo 3 km del Icefield Centre — cero traslado entre el 'camión' y el hike.", "Del Icefield a Banff son ~185 km (~3 h): saliendo del trek ~18:00 se llega ~21:00, aún con algo de luz.", "Para llegar antes: Wilcox hasta el paso (~3 h) y saltarse el Skywalk. Buffer +1 h por fotos (Bow Lake, Peyto)."],
+      optimization: ["Con el Ice Explorer al mediodía (12:00) no hay que madrugar: salir de Jasper ~09:00.", "Wilcox trailhead está a solo 3 km del Icefield Centre — cero traslado entre el 'camión' y el hike.", "Del Icefield a Banff son ~185 km (~3 h): saliendo del trek ~18:15 se llega ~21:15, con el último tramo al anochecer.", "Para llegar antes: Wilcox hasta el paso (~2,5–3 h) y saltarse el Skywalk. Cenar en la RV."],
       routeCoords: [[52.8737, -118.0814], [52.6642, -117.8850], [52.2206, -117.2233], [52.1936, -117.1817], [51.9698, -116.7300], [51.7161, -116.5261], [51.4254, -116.1773], [51.1784, -115.5708]],
       mapCenter: [52.05, -116.65], mapZoom: 7
     },
@@ -589,9 +589,9 @@ window.ITINERARY = {
       routeStops: ["banff_town", "calgary"],
       badge: "Cierre & regreso",
       lodging: { where: "Fin del viaje", nights: "—", detail: "Devolución de la casa rodante a las 11:30 en Calgary y despedida de las Rocosas." },
-      summary: "Salida temprana de Banff para devolver el vehículo a las 11:30 en Calgary. Última mirada a las Rocosas antes de partir.",
+      summary: "Salida temprana de Banff para devolver la casa rodante a las 11:30 en Calgary. Última mirada a las Rocosas antes de partir. OPCIÓN (según tiempo): desvío a Yoho — Takakkaw Falls y Natural Bridge — solo si salen muy temprano o pueden mover la devolución (Yoho queda al oeste, dirección contraria a Calgary).",
       drivingKm: 140, drivingTime: "≈1,5 h", hikingTime: "—", hikeName: null,
-      highlights: ["Amanecer en Vermilion Lakes / Two Jack", "Canmore", "Despedida de las Rocosas"],
+      highlights: ["Amanecer en Vermilion Lakes / Two Jack", "Opción: Yoho (Takakkaw Falls · Natural Bridge)", "Canmore", "Despedida de las Rocosas"],
       alerts: ["⏰ DEVOLUCIÓN DEL AUTO 11:30 en Calgary — salir de Banff a más tardar 09:15.", "⛽ Repostar en Canmore o Calgary ANTES de entregar el vehículo.", "🧴 Descartar/regalar el bear spray (no se puede volar con él).", "📞 Confirmar hora y lugar exacto de la rentadora la noche anterior."],
       schedule: [
         { time: "06:30", icon: "📸", title: "Amanecer (opcional)", detail: "Vermilion Lakes o Two Jack con Mount Rundle." },
@@ -626,15 +626,14 @@ window.ITINERARY = {
   ],
 
   videos: [
-    { id: "zzMo2dy7mNY", title: "The Rockies | Cinematic Drone 4K Video", channel: "stoked tour", duration: "4:05", reason: "Montaje aéreo 4K que fija el tono premium e inspirador del viaje.", topic: "Cinematográfico" },
-    { id: "GmTK37bQUC0", title: "Banff to Jasper on the Icefields Parkway 🇨🇦", channel: "Tom and Nikki Travel", duration: "18:42", reason: "Recorrido en primera persona por las paradas clave de la Parkway con tips prácticos.", topic: "Icefields Parkway" },
-    { id: "JNBTV_l43XY", title: "BANFF NATIONAL PARK Travel Guide — Top Things To See & Do", channel: "Sammy and Tommy", duration: "16:30", reason: "Resumen ordenado de lo mejor de Banff, ideal para planificar.", topic: "Banff" },
-    { id: "z8YLQE3IJp8", title: "The ULTIMATE TRAVEL GUIDE to Jasper National Park", channel: "Traveleaz", duration: "20:15", reason: "Guía completa de Jasper: atracciones, logística y dónde alojarse.", topic: "Jasper" },
-    { id: "CzScqvgTt8U", title: "Most Beautiful Hike in Canada | Berg Lake Trail", channel: "Justin Outdoors", duration: "22:00", reason: "Film del Berg Lake Trail bajo el Robson: muestra exactamente qué implica el trek.", topic: "Mount Robson" },
-    { id: "Q0DWubU1EaQ", title: "The Stunning Peyto Lake Viewpoint — Banff Hiking Trail", channel: "Easy Hikes & Great Landscapes", duration: "8:20", reason: "El sendero corto al mirador icónico de Peyto Lake.", topic: "Peyto Lake" },
-    { id: "5kgSfd7qAWQ", title: "Banff Top 20: Expert Guide to the Canadian Rockies Must-Dos", channel: "Insiders Travel Guide Canada", duration: "24:10", reason: "Cuenta regresiva de un experto local con los mejores hikes y miradores.", topic: "Mejores hikes" },
-    { id: "x0VlECGq66o", title: "Maligne Lake & Spirit Island Cruise — Jasper 4K", channel: "Haswell Travelled", duration: "12:30", reason: "Recorrido 4K a Spirit Island: previsualiza el crucero que se reservará.", topic: "Maligne Lake" },
-    { id: "rdTDwRnvTd4", title: "Bear Safety and Buffaloberries in the Canadian Rockies", channel: "Mountain Nature and Culture", duration: "6:45", reason: "Por qué los encuentros con osos aumentan en temporada de bayas y cómo caminar seguro.", topic: "Seguridad · Osos" }
+    { id: "qGwiFDvRLKM", title: "Landscapes of Banff National Park — 4K UHD (Relaxing)", channel: "OneSmallPlanet", duration: "4K · largo", views: 500000, reason: "Film 4K de Banff con música relajante — fija el tono e inspira el viaje.", topic: "Cinematográfico" },
+    { id: "fY9OojMyRrE", title: "Canada's Best Road Trip: Icefields Parkway (Banff → Jasper)", channel: "Aly Smalls", duration: "≈15 min", views: 171000, reason: "La Icefields Parkway completa con sus paradas clave, en primera persona.", topic: "Icefields Parkway" },
+    { id: "JNBTV_l43XY", title: "BANFF NATIONAL PARK Travel Guide — Top Things To See & Do", channel: "Sammy and Tommy", duration: "16:30", views: 150000, reason: "Resumen ordenado de lo mejor de Banff (Moraine, Lake Louise y más).", topic: "Banff" },
+    { id: "U1j-eO3-aR8", title: "Virtual Walk around Emerald Lake, Yoho National Park — 4K", channel: "4K Relaxation Channel", duration: "4K · 2 h", views: 200000, reason: "Paseo 4K por Emerald Lake (Yoho) — justo el lago que verán el Día 1.", topic: "Yoho · Emerald Lake" },
+    { id: "bayBEe1IkIg", title: "TOP Things to Do in Jasper National Park, Canada", channel: "Aly Smalls", duration: "≈9 min", views: 50000, reason: "Qué hacer en Jasper: atracciones, lagos y logística.", topic: "Jasper" },
+    { id: "NVVw2tAFi9I", title: "The Berg Lake Trail — Mount Robson", channel: "Jenna Alexis", duration: "≈20 min", views: 80000, reason: "El Berg Lake Trail bajo el Robson: muestra qué implica el trek.", topic: "Mount Robson" },
+    { id: "jwXCWRxJjYw", title: "9 Incredible Easy Hikes in Banff National Park (2023)", channel: "Made to Explore", duration: "≈10 min", views: 20000, reason: "Guía de hikes fáciles de Banff para elegir según el día.", topic: "Mejores hikes" },
+    { id: "aIvpLzHiCrg", title: "How to Use Bear Spray — Banff National Park", channel: "Parks Canada", duration: "≈3 min", views: 50000, reason: "Video oficial de Parks Canada: cómo usar el bear spray. Imprescindible.", topic: "Seguridad · Osos" }
   ],
 
   /* ---------------------------------------------------------------
@@ -764,5 +763,344 @@ window.ITINERARY = {
     { city: "Banff", places: ["Park Distillery — comida + destilería", "The Bison — cocina de montaña", "The Maple Leaf — fine dining", "Sky Bistro — cima de la góndola", "Bear Street Tavern — pizza", "Wild Flour Bakery — desayuno"] },
     { city: "Jasper", places: ["Harvest — comparir", "Evil Dave's Grill — creativo", "Fiddle River — pescado", "The Raven Bistro — mediterráneo", "Bear's Paw Bakery — desayuno", "SnowDome Coffee"] },
     { city: "Canmore (en ruta)", places: ["Communitea Café", "Rocky Mountain Bagel Co", "The Grizzly Paw Brewing"] }
+  ],
+
+  extras: [
+    {
+      "name": "Grassi Lakes",
+      "type": "hike",
+      "day": 0,
+      "segment": "Canmore",
+      "coords": [
+        51.0741,
+        -115.4055
+      ],
+      "description": "Dos pequenos lagos de un turquesa casi irreal alimentados por filtracion, sobre Canmore, con paredes de escalada y vistas al valle del Bow. La ruta interpretativa pasa junto a una cascada.",
+      "howToVisit": "Desvio corto a 4,7 km al sur de Canmore por Smith-Dorrien/Spray Lakes Road (Hwy 742); tramo final sin asfaltar. Caminata en bucle de ~3,8-4 km con 300 m de desnivel (1-2 h). Ruta 'easy' mas suave o 'interpretive' con escaleras.",
+      "timeNeeded": "1,5-2 h",
+      "whyWorth": "Fuera de los parques nacionales (sin tasa Parks Canada) y con color de agua espectacular; ideal como parada de entrada/salida por Canmore."
+    },
+    {
+      "name": "Herbert Lake",
+      "type": "lake",
+      "day": 1,
+      "segment": "Icefields Parkway (subida) - inicio",
+      "coords": [
+        51.4414,
+        -116.2239
+      ],
+      "description": "El primer lago apenas empieza la Icefields Parkway, a pocos minutos de Lake Louise. Es un espejo de agua tranquilo, ideal en las primeras horas del dia cuando refleja las montanas del Bow Range sin viento. Muy poca gente para y hay mesas de picnic junto al agua.",
+      "howToVisit": "Parada de carretera con estacionamiento pequeno justo a pie de la ruta. Caminata muy corta de menos de 1 minuto hasta la orilla. Total 15-20 minutos.",
+      "timeNeeded": "15-20 minutos",
+      "whyWorth": "Reflejos perfectos al amanecer y casi sin turistas; parada rapida para estirar las piernas al arrancar la subida."
+    },
+    {
+      "name": "Bow Lake y Num-Ti-Jah Lodge",
+      "type": "lake",
+      "day": 1,
+      "segment": "Icefields Parkway (subida)",
+      "coords": [
+        51.6672,
+        -116.4539
+      ],
+      "description": "Uno de los lagos mas grandes y bellos de la ruta, de un turquesa intenso alimentado por el Glaciar Bow y el Wapta Icefield. El historico Num-Ti-Jah Lodge de techo rojo a la orilla es una postal clasica de las Rockies. Se ve el Crowfoot Glacier con forma de pata de cuervo.",
+      "howToVisit": "Parada de carretera con amplio estacionamiento. Corta caminata a la orilla; opcion de sendero llano bordeando el lago. Total 20-30 minutos, o mas si se camina hacia Bow Glacier Falls.",
+      "timeNeeded": "20-40 minutos",
+      "whyWorth": "Panorama de lago turquesa, glaciar y lodge rojo en un solo golpe de vista; facilisimo con RV."
+    },
+    {
+      "name": "Waterfowl Lakes",
+      "type": "lake",
+      "day": 1,
+      "segment": "Icefields Parkway (subida)",
+      "coords": [
+        51.8397,
+        -116.5517
+      ],
+      "description": "Dos lagos turquesa (Upper y Lower Waterfowl) rodeados por Mount Chephren y Howse Peak, entre los picos mas dramaticos de la ruta. Menos concurridos que Peyto pero igual de fotogenicos, con reflejos espectaculares en dias calmos.",
+      "howToVisit": "Parada de carretera en el mirador de Lower Waterfowl Lake; vista directa desde el pull-off. Hay campground cercano. Total 15-20 minutos.",
+      "timeNeeded": "15-20 minutos",
+      "whyWorth": "Picos afilados reflejados en agua turquesa, con mucho menos gentio que los lagos famosos."
+    },
+    {
+      "name": "Mistaya Canyon",
+      "type": "canyon",
+      "day": 1,
+      "segment": "Icefields Parkway (subida)",
+      "coords": [
+        51.7593,
+        -116.4965
+      ],
+      "description": "Un canon estrecho y sinuoso tallado por el rio Mistaya, con paredes de roca lisa esculpidas por el agua y un puente sobre el estrecho abismo. La fuerza del agua ha creado marmitas y curvas dramaticas en la piedra caliza.",
+      "howToVisit": "Caminata corta de 1 km ida y vuelta por un camino en bajada (35 m de desnivel), footing con grava. Estacionamiento a pie de ruta. Total 30-45 minutos.",
+      "timeNeeded": "30-45 minutos",
+      "whyWorth": "Canon dramatico y accesible que rompe la monotonia de lagos; ideal para estirar las piernas."
+    },
+    {
+      "name": "Saskatchewan River Crossing / Howse Valley viewpoint",
+      "type": "viewpoint",
+      "day": 1,
+      "segment": "Icefields Parkway (subida) - The Crossing",
+      "coords": [
+        51.9714,
+        -116.7256
+      ],
+      "description": "Punto donde confluyen los rios North Saskatchewan, Mistaya y Howse, con vistas amplias del valle glaciar y Mount Sarbach. Es tambien la unica parada de servicios (combustible, comida) a mitad de camino, util para un RV. El mirador de Howse ofrece un panorama del valle historico usado por exploradores.",
+      "howToVisit": "Parada de carretera; el mirador de Howse Valley esta a poca distancia al norte con pull-off. Reabastecer combustible aqui. Total 15-30 minutos.",
+      "timeNeeded": "15-30 minutos",
+      "whyWorth": "Unica gasolinera/servicios a mitad de ruta mas panorama de valle glaciar; parada practica y escenica."
+    },
+    {
+      "name": "Weeping Wall",
+      "type": "waterfall",
+      "day": 1,
+      "segment": "Icefields Parkway (subida) - Cirrus Mountain",
+      "coords": [
+        52.0656,
+        -116.85
+      ],
+      "description": "Una pared de roca de mas de 100 m de altura sobre el flanco de Cirrus Mountain, por la que descienden multiples cascadas finas como lagrimas alimentadas por el deshielo. En invierno se congela y es meca del escalada en hielo; en verano brilla con hilos de agua.",
+      "howToVisit": "Parada de carretera con pull-off directamente frente a la pared, al lado oeste. Vista desde el auto o RV. Total 5-10 minutos.",
+      "timeNeeded": "5-10 minutos",
+      "whyWorth": "Muro de cascadas espectacular visible sin bajarse casi del vehiculo; parada rapida antes del Big Bend."
+    },
+    {
+      "name": "Big Bend",
+      "type": "viewpoint",
+      "day": 1,
+      "segment": "Icefields Parkway (subida)",
+      "coords": [
+        52.095,
+        -116.8806
+      ],
+      "description": "La famosa curva en horquilla donde la carretera trepa dramaticamente por el valle del North Saskatchewan bajo picos imponentes. Desde el pull-off superior se ve la ruta serpenteando abajo y la cascada Bridal Veil Falls al otro lado del valle.",
+      "howToVisit": "Parada de carretera en el mirador tras la curva; pull-off amplio. Vistas del valle y de Bridal Veil Falls. Total 10-15 minutos.",
+      "timeNeeded": "10-15 minutos",
+      "whyWorth": "Perspectiva de la carretera trepando el valle y cascada lejana; muy fotogenico y facil."
+    },
+    {
+      "name": "Parker Ridge (mirador del Glaciar Saskatchewan)",
+      "type": "hike",
+      "day": 1,
+      "segment": "Icefields Parkway (subida) - cerca del Columbia Icefield",
+      "coords": [
+        52.1989,
+        -117.1172
+      ],
+      "description": "Una de las mejores caminatas cortas de la ruta: sube por switchbacks hasta una cresta desde donde se ve el enorme Glaciar Saskatchewan, el mayor efluente del Columbia Icefield (unos 13 km de largo). Vistas de 360 grados sobre cadenas montanosas y tundra alpina.",
+      "howToVisit": "Caminata de 2.4-2.7 km por lado (4.8-5.4 km ida y vuelta), 250-300 m de desnivel, 1.5-2.5 horas. Estacionamiento a pie de ruta. Mejor de finales de junio a octubre por nieve.",
+      "timeNeeded": "1.5-2.5 horas",
+      "whyWorth": "Vista de un glaciar gigante con esfuerzo moderado; el mejor balance esfuerzo/recompensa de la Parkway."
+    },
+    {
+      "name": "Tangle Creek Falls",
+      "type": "waterfall",
+      "day": 1,
+      "segment": "Icefields Parkway (subida) - cerca Columbia Icefield",
+      "coords": [
+        52.2021,
+        -117.2312
+      ],
+      "description": "Una cascada escalonada de varios niveles que cae en trenzas finas justo al borde de la carretera, muy cerca del Columbia Icefield Centre. Es de las mas accesibles de toda la ruta: casi se puede tocar desde el pull-off.",
+      "howToVisit": "Parada de carretera; estacionar en el pull-off y cruzar la ruta con cuidado. Vista inmediata. Total 10 minutos.",
+      "timeNeeded": "10 minutos",
+      "whyWorth": "Cascada bonita y fotogenica sin ninguna caminata; parada exprés cerca del glaciar."
+    },
+    {
+      "name": "Stutfield Glacier viewpoint",
+      "type": "glacier",
+      "day": 1,
+      "segment": "Icefields Parkway (subida) - norte del Columbia Icefield",
+      "coords": [
+        52.2839,
+        -117.3022
+      ],
+      "description": "Mirador hacia el Glaciar Stutfield, que desciende del Columbia Icefield con dos lenguas de hielo colgantes sobre acantilados y cascadas de deshielo. Menos visitado que el Athabasca, ofrece una vista tranquila del muro helado y el valle glaciar del rio Sunwapta.",
+      "howToVisit": "Parada de carretera con pull-off senalizado al lado este de la ruta. Vista directa desde el estacionamiento. Total 10-15 minutos.",
+      "timeNeeded": "10-15 minutos",
+      "whyWorth": "Glaciar colgante impresionante y sin multitudes; complemento tranquilo al circo del Athabasca."
+    },
+    {
+      "name": "Sunwapta Falls",
+      "type": "waterfall",
+      "day": 1,
+      "segment": "Icefields Parkway (subida) - Jasper NP",
+      "coords": [
+        52.5324,
+        -117.645
+      ],
+      "description": "Cascada potente donde el rio Sunwapta, alimentado por el Glaciar Athabasca, se estrecha bruscamente y cae en un canon rocoso alrededor de una pequena isla con pinos. Hay puente para verla desde arriba y sendero corto a la catarata inferior, mas tranquila.",
+      "howToVisit": "Desvio corto de la ruta principal (1 km) hasta el estacionamiento con lodge/cafe. Caminata de 1-2 minutos a la catarata superior; opcional 1.3 km a la inferior. Total 20-40 minutos.",
+      "timeNeeded": "20-40 minutos",
+      "whyWorth": "Cascada dramatica y accesible ya cerca de Jasper; buen ultimo alto antes de bajar de la Parkway."
+    },
+    {
+      "name": "Horseshoe Lake",
+      "type": "lake",
+      "day": 1,
+      "segment": "Icefields Parkway (subida)",
+      "coords": [
+        52.5717,
+        -117.6122
+      ],
+      "description": "Pequeno lago con forma de herradura de aguas azul intenso encajado entre acantilados, justo al lado de la Icefields Parkway. Popular entre saltadores de acantilado, pero igual de bonito solo para mirar.",
+      "howToVisit": "Parada de carretera muy facil sobre la Hwy 93, ~25 km al sur de Athabasca Falls; parking y caminata de 5 minutos al mirador. Tambien se pasa de vuelta el Dia 5.",
+      "timeNeeded": "20-30 min",
+      "whyWorth": "Parada rapida y poco concurrida en la Parkway, con color de agua espectacular sin apenas esfuerzo."
+    },
+    {
+      "name": "Overlander Falls",
+      "type": "waterfall",
+      "day": 1,
+      "segment": "Mount Robson",
+      "coords": [
+        53.0313,
+        -119.208
+      ],
+      "description": "Cascada ancha y potente donde el joven rio Fraser se estrecha y se precipita entre roca, muy caudalosa en verano. La rodea un bosque frondoso y un canon poco visitado.",
+      "howToVisit": "Parada / caminata corta a 2 km al este del centro de visitantes de Mount Robson por la Yellowhead Hwy 5/16. Sendero facil de ~0,6 km (ida) hasta la base; ruta larga opcional de 5 km siguiendo el Fraser.",
+      "timeNeeded": "30-50 min",
+      "whyWorth": "Fuerza bruta del Fraser en un rincon tranquilo, perfecta al llegar a la zona de Mount Robson (Dia 1) o durante el Dia 2."
+    },
+    {
+      "name": "Rearguard Falls",
+      "type": "waterfall",
+      "day": 1,
+      "segment": "Mount Robson",
+      "coords": [
+        52.9827,
+        -119.3846
+      ],
+      "description": "El limite superior de la migracion del salmon chinook por el rio Fraser: tras ~1.200 km de viaje, los salmones intentan saltar estas cascadas. La pasarela permite asomarse justo sobre el agua.",
+      "howToVisit": "Parada de carretera con caminata corta (~0,5 km ida) desde el parking en la Yellowhead Hwy 16, al oeste del centro de Mount Robson. En agosto el caudal es fuerte; el salto del salmon suele empezar a finales de agosto, asi que a comienzos del viaje quiza aun no se vea saltar.",
+      "timeNeeded": "20-40 min",
+      "whyWorth": "Cascada bonita y con la historia unica del salmon; parada facil de camino entre Jasper y Mount Robson."
+    },
+    {
+      "name": "Medicine Lake",
+      "type": "lake",
+      "day": 3,
+      "segment": "Maligne Road (Jasper)",
+      "coords": [
+        52.8497,
+        -117.7817
+      ],
+      "description": "Lago 'que desaparece': se vacia parcialmente en otono por un sistema de drenaje subterraneo (uno de los mayores sistemas karsticos de Norteamerica). En agosto suele estar lleno y turquesa, con las laderas marcadas por el incendio de 2024.",
+      "howToVisit": "Parada de carretera con miradores sobre la Maligne Lake Road, de camino a Maligne Lake (Dia 3). Sin caminata; varios apartaderos. La carretera reabrio; comprobar estado en Parks Canada por si hay cierres por riesgo de incendio/inundacion.",
+      "timeNeeded": "15-30 min",
+      "whyWorth": "Fenomeno hidrologico unico y parada natural en el trayecto a Maligne Lake."
+    },
+    {
+      "name": "Pyramid Lake y Patricia Lake",
+      "type": "lake",
+      "day": 4,
+      "segment": "Jasper (afueras del pueblo)",
+      "coords": [
+        52.933,
+        -118.0975
+      ],
+      "description": "Dos lagos gemelos a los pies de Pyramid Mountain, a pocos minutos del pueblo de Jasper. Pyramid tiene una islita unida por pasarela de madera, perfecta al atardecer; Patricia es mas tranquilo y bueno para reflejos.",
+      "howToVisit": "Parada de carretera / paseo corto: 8 km desde el centro de Jasper por Pyramid Lake Road. Aparcamiento junto a la orilla y a la pasarela de Pyramid Island. Se pueden alquilar canoas.",
+      "timeNeeded": "45 min - 1,5 h",
+      "whyWorth": "Muy accesibles desde Jasper (Dia 4) y con la estampa de Pyramid Mountain reflejada; gran opcion para el atardecer."
+    },
+    {
+      "name": "Johnston Canyon (Lower & Upper Falls)",
+      "type": "canyon",
+      "day": 7,
+      "segment": "Bow Valley Parkway (Banff)",
+      "coords": [
+        51.2451,
+        -115.8399
+      ],
+      "description": "Canon de paredes calizas recorrido por pasarelas metalicas ancladas a la roca sobre el agua turquesa. Las Lower Falls (1,1 km) y las Upper Falls (2,7 km) son el objetivo. Muy popular, mejor ir temprano o al atardecer.",
+      "howToVisit": "Parada en la Bow Valley Parkway (Hwy 1A), 6 km al este de Castle Junction. Caminata facil-moderada por pasarela: 2,2 km ida/vuelta a Lower Falls, 5,4 km a Upper Falls. En 2026 la seccion este de la parkway tiene restricciones de vehiculos en primavera/otono, pero en agosto el acceso rodado esta abierto.",
+      "timeNeeded": "1-2,5 h segun se llegue a Lower o Upper Falls",
+      "whyWorth": "El canon mas accesible y espectacular de Banff (sustituye de sobra al Maligne Canyon cerrado en 2026)."
+    },
+    {
+      "name": "Vermilion Lakes",
+      "type": "viewpoint",
+      "day": 7,
+      "segment": "Banff (junto al pueblo)",
+      "coords": [
+        51.1757,
+        -115.6015
+      ],
+      "description": "Cadena de tres lagos poco profundos a las puertas de Banff, con el monte Rundle reflejado en el agua. Uno de los mejores sitios para amanecer, atardecer y ver fauna (alces, aves acuaticas).",
+      "howToVisit": "Parada de carretera: Vermilion Lakes Road, un desvio corto de 1 km desde el pueblo de Banff, con varios apartaderos junto al agua. Sin caminata, ideal para caravanas.",
+      "timeNeeded": "20-45 min",
+      "whyWorth": "El reflejo de Rundle al atardecer es de los clasicos de Banff, y esta a 5 minutos del pueblo."
+    },
+    {
+      "name": "Two Jack Lake",
+      "type": "lake",
+      "day": 7,
+      "segment": "Banff (Minnewanka Loop)",
+      "coords": [
+        51.2286,
+        -115.4938
+      ],
+      "description": "Lago de aguas azul-verdosas con el monte Rundle como telon de fondo, mucho mas tranquilo que Minnewanka pese a estar al lado. Excelente para reflejos al amanecer y para un picnic.",
+      "howToVisit": "Parada de carretera en el Lake Minnewanka Loop, a ~10 km de Banff; se combina perfectamente con la visita a Lake Minnewanka del Dia 7. Hay apartadero y orilla accesible sin caminar.",
+      "timeNeeded": "20-40 min",
+      "whyWorth": "Complemento natural de Minnewanka (mismo bucle) con estampa clasica de Rundle reflejado."
+    },
+    {
+      "name": "Takakkaw Falls",
+      "type": "waterfall",
+      "day": 8,
+      "segment": "Yoho (opción · Día 14)",
+      "coords": [
+        51.4996,
+        -116.4776
+      ],
+      "description": "Con 254 m de caida principal (373 m en total), Takakkaw es la segunda cascada mas alta de Canada, alimentada por el glaciar Daly. El rugido y la nube de agua pulverizada se sienten a metros de distancia. 'Takakkaw' significa 'maravilloso' en lengua cree.",
+      "howToVisit": "Desvio por Yoho Valley Road (13,7 km, con curvas cerradas de horquilla; caravanas grandes deben maniobrar despacio) desde la TransCanada, 5 km al este de Field. Caminata corta y plana de 0,9 km desde el parking hasta la base. La carretera solo abre de mediados de junio a mediados de octubre.",
+      "timeNeeded": "1-1,5 h (mas 30-40 min de conduccion por el desvio)",
+      "whyWorth": "Una de las cascadas mas impresionantes de las Rockies, ideal en agosto cuando el deshielo mantiene gran caudal."
+    },
+    {
+      "name": "Natural Bridge (Kicking Horse River)",
+      "type": "viewpoint",
+      "day": 8,
+      "segment": "Yoho (opción · Día 14)",
+      "coords": [
+        51.3906,
+        -116.4747
+      ],
+      "description": "El rio Kicking Horse ha perforado un puente natural de roca por el que el agua se cuela con fuerza espectacular. La fuerza del caudal glaciar en verano hace que el paso sea muy dramatico.",
+      "howToVisit": "Parada de carretera con parking, a pocos cientos de metros por Emerald Lake Road (camino a Emerald Lake). Pasarela y plataformas a 2 minutos a pie. Sin esfuerzo.",
+      "timeNeeded": "15-25 min",
+      "whyWorth": "Parada rapida y casi obligada de camino a Emerald Lake, con geologia curiosa y buen caudal en agosto."
+    },
+    {
+      "name": "Wapta Falls",
+      "type": "waterfall",
+      "day": 8,
+      "segment": "Yoho (opción · Día 14)",
+      "coords": [
+        51.1706,
+        -116.5606
+      ],
+      "description": "La cascada mas caudalosa del rio Kicking Horse: 30 m de alto y 150 m de ancho, una cortina de agua ancha y potente. Menos concurrida que las estrellas de Yoho.",
+      "howToVisit": "Desvio de 1,8 km por pista de grava desde la TransCanada (extremo oeste del parque) hasta el parking; luego caminata de ~2,4 km (ida) por bosque hasta los miradores. El acceso rodado cierra de finales de octubre a finales de mayo.",
+      "timeNeeded": "1,5-2 h (ida y vuelta)",
+      "whyWorth": "Impresionante por su anchura y caudal; buena opcion si sobra tiempo en Yoho y se quiere una caminata tranquila."
+    },
+    {
+      "name": "Spiral Tunnels Lower Viewpoint",
+      "type": "viewpoint",
+      "day": 8,
+      "segment": "Yoho (opción · Día 14)",
+      "coords": [
+        51.4306,
+        -116.3316
+      ],
+      "description": "Mirador ferroviario historico sobre los famosos tuneles en espiral excavados en 1909 para vencer la pendiente del Big Hill. Con suerte se ve un tren larguisimo entrando y saliendo del tunel a distintas alturas a la vez.",
+      "howToVisit": "Parada de carretera con panel interpretativo sobre la TransCanada, 7,4 km al este de Field. Sin caminata. Merece la pena solo si pasa un tren (los mas largos son un espectaculo).",
+      "timeNeeded": "10-20 min",
+      "whyWorth": "Parada facil y gratuita camino a Yoho; curiosidad de ingenieria muy visual para hacer un alto."
+    }
   ]
 };
