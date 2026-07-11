@@ -217,17 +217,38 @@
       "img": "assets/img/photos/lake_louise.jpg",
       "credit": "Dietmar Rabich / Wikimedia Commons",
       "short": "El lago glaciar más famoso del mundo.",
-      "description": "Aguas turquesa bajo el glaciar Victoria y el Château Lake Louise. Se visita en ruta el Día 1 y de nuevo el Día 6 con el shuttle. El estacionamiento se llena muy temprano — el shuttle es la mejor forma de acceder.",
+      "description": "Aguas turquesa bajo el glaciar Victoria y el Château Lake Louise. Se visita el Día 6 con el shuttle (junto a Moraine Lake). El estacionamiento se llena muy temprano — el shuttle es la mejor forma de acceder.",
       "duration": "1–2 h",
       "difficulty": "Fácil",
       "bestTime": "Antes de las 8:00 o vía shuttle",
       "photoTips": "Orilla del château hacia el glaciar; reflejo perfecto sin viento a primera hora.",
       "days": [
-        1,
         6
       ],
       "popularity": 5,
       "reservation": "Parking se satura: usar shuttle de Parks Canada (reservar)."
+    },
+    {
+      "id": "emerald_lake",
+      "name": "Emerald Lake",
+      "type": "lake",
+      "coords": [
+        51.4429,
+        -116.5289
+      ],
+      "img": "assets/img/photos/emerald_lake.jpg",
+      "credit": "Wikimedia Commons",
+      "short": "El lago verde esmeralda de Yoho.",
+      "description": "El lago más grande de Yoho National Park (BC), de un verde esmeralda intenso rodeado por el President Range. Un desvío corto desde la Trans-Canada (cerca de Field). Sendero llano de ≈5 km alrededor del lago y canoas junto a un lodge histórico.",
+      "duration": "1–1,5 h",
+      "difficulty": "Fácil",
+      "bestTime": "Media mañana / tarde (verde intenso con sol)",
+      "photoTips": "Puente de troncos hacia el lodge; canoa roja en primer plano; vuelta al lago para el reflejo sin viento.",
+      "days": [
+        1
+      ],
+      "popularity": 5,
+      "reservation": "No requiere. Estacionamiento pequeño — llegar temprano o media tarde."
     },
     {
       "id": "peyto_lake",
@@ -269,7 +290,6 @@
       "bestTime": "Mañana (menos gente, mejor luz)",
       "photoTips": "Lengua del glaciar con figuras para escala; viento gélido — protege la cámara. Contraste de hielo azul y morrena.",
       "days": [
-        1,
         5
       ],
       "popularity": 5,
@@ -730,18 +750,17 @@
       "dow": "Jueves",
       "title": "Calgary → Icefields Parkway → Mount Robson",
       "base": "Mount Robson (BC)",
-      "route": "Calgary · Banff · Lake Louise · Peyto Lake · Columbia Icefield · Athabasca Falls · Jasper · Mount Robson",
+      "route": "Calgary · Banff · Emerald Lake (Yoho) · Peyto Lake · Athabasca Falls · Jasper · Mount Robson",
       "routeStops": [
         "calgary",
         "banff_town",
-        "lake_louise",
+        "emerald_lake",
         "peyto_lake",
-        "columbia_icefield",
         "athabasca_falls",
         "jasper_town",
         "mount_robson"
       ],
-      "badge": "El gran día escénico",
+      "badge": "Salida tarde · ruta escénica",
       "lodging": {
         "where": "Cerca de Mount Robson",
         "nights": "Noche 1 · sitio SIN reservar",
@@ -755,71 +774,65 @@
           "Valemount (~30 min): Irvin's Park & Campground · Valemount Pines Campground"
         ]
       },
-      "summary": "La Icefields Parkway completa, una de las carreteras más bellas del mundo, y se continúa más allá de Jasper hasta dormir a los pies del Mount Robson. Día largo y espectacular.",
-      "drivingKm": 500,
+      "summary": "Salida al mediodía (~12:00) de Calgary con parada en el verde Emerald Lake (Yoho) y ruta escénica por la Icefields Parkway hasta dormir a los pies del Mount Robson. Con el arranque tarde, la llegada a Robson es al anochecer — Peyto y Athabasca Falls quedan como paradas rápidas (se ven con calma el Día 11 de vuelta).",
+      "drivingKm": 520,
       "drivingTime": "≈7 h",
       "hikingTime": "Paseos cortos",
       "hikeName": "Miradores en ruta",
       "highlights": [
+        "Emerald Lake (Yoho) verde esmeralda",
         "Peyto Lake (cabeza de lobo)",
-        "Athabasca Glacier / Columbia Icefield",
         "Athabasca Falls",
         "Primer avistaje del Mount Robson (3.954 m)"
       ],
       "alerts": [
-        "⛽ COMBUSTIBLE: llenar en Lake Louise y de nuevo en Jasper — es la última antes de Mount Robson.",
-        "🕐 Cambio de zona horaria al entrar a BC: Mount Robson usa hora del Pacífico (−1 h).",
-        "🛣️ Día muy largo (≈500 km) — salir muy temprano.",
+        "⏰ Salida ~12:00 de Calgary → llegada a Robson al anochecer (~21:00). Para llegar antes: saltar Peyto/Athabasca (se ven el Día 11).",
+        "⛽ COMBUSTIBLE: llenar en Lake Louise y de nuevo en Jasper — última antes de Mount Robson.",
+        "🕐 Cambio de hora al entrar a BC: Mount Robson usa hora del Pacífico (−1 h).",
         "📵 Sin cobertura en casi toda la ruta. 🎫 Parks Canada Pass a la vista."
       ],
       "schedule": [
         {
-          "time": "06:00",
+          "time": "12:00",
           "icon": "🚗",
           "title": "Salida de Calgary",
-          "detail": "Salida temprano: es el día más largo de conducción."
+          "detail": "Arranque al mediodía; rumbo oeste por la Trans-Canada (Hwy 1)."
         },
         {
-          "time": "07:30",
+          "time": "13:30",
           "icon": "☕",
-          "title": "Parada en Banff",
-          "detail": "Café rápido (Wild Flour); foto de Cascade Mountain."
+          "title": "Parada rápida en Banff / Canmore",
+          "detail": "Café y estirar las piernas."
         },
         {
-          "time": "09:00",
-          "icon": "📸",
-          "title": "Lake Louise + Peyto Lake",
-          "detail": "Vista rápida de Lake Louise (parking temprano) y mirador de Peyto."
-        },
-        {
-          "time": "12:30",
-          "icon": "🍽️",
-          "title": "Almuerzo Saskatchewan Crossing",
-          "detail": "¡Rellenar snacks! Opciones limitadas."
-        },
-        {
-          "time": "14:00",
-          "icon": "🧊",
-          "title": "Columbia Icefield",
-          "detail": "Athabasca Glacier; opcional Ice Explorer / Skywalk."
-        },
-        {
-          "time": "16:00",
-          "icon": "💦",
-          "title": "Athabasca Falls",
-          "detail": "Pasarelas sobre el cañón."
+          "time": "15:00",
+          "icon": "💚",
+          "title": "Emerald Lake (Yoho)",
+          "detail": "Desvío corto cerca de Field; verde esmeralda, canoas y vuelta al lago (≈1 h)."
         },
         {
           "time": "17:00",
+          "icon": "📸",
+          "title": "Peyto Lake (rápido)",
+          "detail": "Mirador de Bow Summit; parada breve (o saltar y verlo el Día 11)."
+        },
+        {
+          "time": "19:15",
+          "icon": "💦",
+          "title": "Athabasca Falls (rápido)",
+          "detail": "Pasarelas sobre el cañón (o saltar y verlo el Día 11)."
+        },
+        {
+          "time": "20:00",
           "icon": "⛽",
           "title": "Jasper — repostar",
           "detail": "Última gasolinera y compras antes de Robson."
         },
         {
-          "time": "18:30",
+          "time": "21:15",
           "icon": "🏔️",
           "title": "Llegada a Mount Robson",
-          "detail": "Check-in y cena; atardecer sobre la montaña."
+          "detail": "Check-in al anochecer; cena en la casa rodante."
         }
       ],
       "food": {
@@ -870,10 +883,10 @@
         "Cargador de auto para el trayecto largo"
       ],
       "optimization": [
-        "Salida 06:00 obligada por los ≈500 km.",
+        "Con salida al mediodía, priorizar Emerald Lake y no demorarse: cada parada retrasa la llegada a Robson.",
+        "Peyto y Athabasca Falls son opcionales hoy — se recorren de nuevo el Día 11 de vuelta a Banff.",
         "Llenar estanque en Lake Louise y Jasper (crítico).",
-        "Recordar el cambio a hora del Pacífico al entrar a BC.",
-        "Buffer de +2 h sobre el tiempo de Google por las paradas escénicas."
+        "Recordar el cambio a hora del Pacífico al entrar a BC."
       ],
       "routeCoords": [
         [
@@ -885,16 +898,12 @@
           -115.5708
         ],
         [
-          51.4254,
-          -116.1773
+          51.4429,
+          -116.5289
         ],
         [
           51.7161,
           -116.5261
-        ],
-        [
-          52.2206,
-          -117.2233
         ],
         [
           52.6642,
