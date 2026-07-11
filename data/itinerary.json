@@ -1495,81 +1495,94 @@
       "n": 5,
       "date": "11 Ago",
       "dow": "Lunes",
-      "title": "Jasper → Banff (Wilcox Pass)",
+      "title": "Jasper → Banff · Columbia Icefield + Wilcox Pass",
       "base": "Banff",
-      "route": "Jasper · Wilcox Pass · Icefields Parkway (return) · Banff",
+      "route": "Jasper · Columbia Icefield (Ice Explorer) · Wilcox Pass · Icefields Parkway · Banff",
       "routeStops": [
         "jasper_town",
-        "wilcox_pass",
         "columbia_icefield",
+        "wilcox_pass",
         "peyto_lake",
         "banff_town"
       ],
-      "badge": "Trek glaciar + traslado",
+      "badge": "Icefield + trek + traslado",
       "lodging": {
         "where": "Banff",
         "nights": "Noche 1 de 3 · reservado",
         "detail": "Camping reservado en Banff — 3 noches (11·12·13). Tunnel Mountain / Two Jack Lakeside."
       },
-      "summary": "Trek a Wilcox Pass con la mejor vista frontal del Athabasca Glacier, y regreso escénico por la Icefields Parkway hasta Banff.",
+      "summary": "Mañana en el Columbia Icefield: el Ice Explorer (el 'camión' glaciar) sobre el Athabasca Glacier. Por la tarde, el trek de Wilcox Pass (a 3 km, con la mejor vista frontal del glaciar) y regreso escénico por la Icefields Parkway hasta Banff. Día largo pero factible reservando el PRIMER turno del Ice Explorer.",
       "drivingKm": 290,
       "drivingTime": "≈4 h",
       "hikingTime": "3–4 h",
-      "hikeName": "Wilcox Pass",
+      "hikeName": "Wilcox Pass (tarde)",
       "highlights": [
-        "Vista frontal del Athabasca Glacier",
-        "Praderas alpinas con bighorn",
-        "Segunda pasada por la Icefields Parkway",
-        "Peyto Lake (segunda oportunidad)"
+        "Ice Explorer sobre el Athabasca Glacier (el 'camión')",
+        "Trek Wilcox Pass · vista frontal del glaciar",
+        "Bow Lake · Peyto (2ª oportunidad)",
+        "Praderas alpinas con bighorn"
       ],
       "alerts": [
+        "🎫 Ice Explorer: reservar el PRIMER turno de la mañana (online, con antelación) para que quepa todo el día.",
+        "⏳ Sí alcanza, pero es día largo: Icefield (mañana) + Wilcox (tarde) + 4 h de ruta → llegada a Banff al anochecer (~20:00). Hay luz de verano hasta ~21:00.",
         "⛽ Llenar en Jasper — tramo largo con poco servicio.",
-        "💨 Wilcox Pass expuesto y ventoso sobre la línea de árboles.",
-        "🐏 Borregos cimarrones (bighorn) en el sendero — no alimentar.",
-        "⏳ Día combinado (hike + 4 h de ruta): gestionar bien el tiempo."
+        "🐏 Wilcox: praderas con bighorn; expuesto y ventoso arriba — no alimentar fauna.",
+        "🍽️ Reservar/cenar tarde en Banff (verificar horario de cocina)."
       ],
       "schedule": [
         {
           "time": "06:30",
           "icon": "🚗",
           "title": "Check-out y salida de Jasper",
-          "detail": "Rumbo sur por la Parkway."
+          "detail": "Rumbo sur por la Parkway (≈105 km al Icefield)."
         },
         {
           "time": "08:15",
-          "icon": "📍",
-          "title": "Trailhead Wilcox Creek",
-          "detail": "Junto al Columbia Icefield."
+          "icon": "🧊",
+          "title": "Llegada al Columbia Icefield",
+          "detail": "Estacionar la casa rodante en el Icefield Centre."
         },
         {
-          "time": "08:30",
+          "time": "08:45",
+          "icon": "🚛",
+          "title": "Ice Explorer sobre el glaciar",
+          "detail": "El 'camión' glaciar sobre el Athabasca (reservar 1er turno); opcional Skywalk. ≈1,5–2 h."
+        },
+        {
+          "time": "11:00",
+          "icon": "🍽️",
+          "title": "Almuerzo en el Icefield Centre",
+          "detail": "Comer y repostar antes del trek."
+        },
+        {
+          "time": "12:00",
           "icon": "🥾",
           "title": "Trek Wilcox Pass",
-          "detail": "Subida a la vista del glaciar."
+          "detail": "Trailhead a 3 km (Wilcox Creek) · 8 km · 3–4 h · vista frontal del glaciar."
         },
         {
-          "time": "12:30",
-          "icon": "🍽️",
-          "title": "Almuerzo Icefield Centre",
-          "detail": "Fin del hike; comida y combustible."
+          "time": "15:45",
+          "icon": "🔙",
+          "title": "Fin del trek",
+          "detail": ""
         },
         {
-          "time": "13:30",
+          "time": "16:00",
           "icon": "🚗",
           "title": "Ruta a Banff",
-          "detail": "Bow Lake, Peyto (segunda oportunidad) en el camino."
+          "detail": "≈290 km / 4 h; Bow Lake y Peyto (2ª oportunidad) en el camino."
         },
         {
-          "time": "17:30",
+          "time": "20:00",
           "icon": "🏨",
           "title": "Llegada a Banff",
-          "detail": "Check-in."
+          "detail": "Check-in al anochecer (con luz de verano)."
         },
         {
-          "time": "19:00",
+          "time": "20:45",
           "icon": "🍽️",
-          "title": "Cena en Banff",
-          "detail": "Park Distillery o The Bison."
+          "title": "Cena tardía en Banff",
+          "detail": "Park Distillery o The Bison (verificar horario)."
         }
       ],
       "food": {
@@ -1619,9 +1632,10 @@
         "Cargador de auto para el trayecto largo"
       ],
       "optimization": [
-        "Hacer Wilcox temprano y conducir a Banff por la tarde.",
-        "Aprovechar el regreso por la Parkway para las fotos que faltaron el Día 1.",
-        "Buffer de +1 h por paradas fotográficas."
+        "Reservar el Ice Explorer en el PRIMER turno (~08:45–09:00) para que quepa el trek de la tarde.",
+        "Wilcox trailhead está a solo 3 km del Icefield Centre — cero traslado entre el 'camión' y el hike.",
+        "En agosto hay luz hasta ~21:00: la llegada de noche a Banff no es problema.",
+        "Buffer de +1 h por paradas fotográficas (Bow Lake, Peyto)."
       ],
       "routeCoords": [
         [
