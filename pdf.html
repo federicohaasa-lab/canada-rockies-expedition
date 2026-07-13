@@ -16,15 +16,18 @@
   --grad-ice:linear-gradient(135deg,#8fd0df,#d7eef4);
 }
 *{margin:0;padding:0;box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-@page{size:A4;margin:0}
+@page{size:A4;margin:14mm 13mm 12mm}
+@page bleed{margin:0}
 html,body{background:#fff;color:var(--text);font-family:var(--sans);line-height:1.5;font-size:11px}
 h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.1;color:var(--ink)}
 img{display:block}
 
-.page{position:relative;width:210mm;min-height:297mm;padding:16mm 15mm 14mm;page-break-after:always;overflow:hidden}
+.page{position:relative;page-break-after:always}
 .page:last-child{page-break-after:auto}
-.page.bleed{padding:0}
-.pnum{position:absolute;left:15mm;right:15mm;bottom:7mm;display:flex;justify-content:space-between;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);font-weight:600}
+.page.bleed{page:bleed;width:210mm;height:297mm;overflow:hidden;padding:0}
+.pnum{display:none}
+/* flowing pages: keep individual blocks whole; let grids/groups break between items */
+.card,.stat,.gcard,.check,.rbox,.rec,.qr,.xcard,.crew-card,.day-hero,.summary-box,.crew-box,.flight,.day-summary,.wchip{break-inside:avoid}
 .eyebrow{font-weight:750;font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--glacier);display:flex;align-items:center;gap:8px}
 .eyebrow::before{content:"";width:20px;height:2px;background:currentColor}
 .sec-title{font-size:30px;margin-top:10px;letter-spacing:-.01em}
@@ -75,7 +78,7 @@ img{display:block}
 .flight b{color:var(--glacier)}
 
 /* ---------- DAY PAGE ---------- */
-.day-hero{position:relative;height:66mm;border-radius:16px;overflow:hidden;margin-bottom:12px}
+.day-hero{position:relative;height:58mm;border-radius:16px;overflow:hidden;margin-bottom:11px}
 .day-hero img{width:100%;height:100%;object-fit:cover}
 .day-hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,18,28,.15),rgba(6,18,28,.78))}
 .day-hero .lbl{position:absolute;left:16px;bottom:14px;right:16px;z-index:2;color:#fff}
@@ -162,7 +165,8 @@ img{display:block}
 .qr .tp{font-size:7.5px;font-weight:750;text-transform:uppercase;letter-spacing:.06em;color:var(--glacier)}
 .qr h5{font-family:var(--serif);font-size:10px;margin-top:3px;line-height:1.2;color:var(--ink)}
 .qr .ch{font-size:8px;color:var(--muted);margin-top:3px}
-.xgroup{margin-bottom:11px;break-inside:avoid}
+.xgroup{margin-bottom:11px}
+.xday{break-after:avoid}
 .xday{font-family:var(--serif);font-size:12px;color:var(--glacier);border-bottom:1px solid var(--line);padding-bottom:4px;margin-bottom:7px}
 .xcards{display:grid;grid-template-columns:1fr 1fr;gap:7px}
 .xcard{border:1px solid var(--line);border-radius:9px;padding:8px 10px;break-inside:avoid}
@@ -309,11 +313,7 @@ img{display:block}
       var cards=xByDay[day].map(function(e){return '<div class="xcard"><div class="xtop"><b>'+esc(e.name)+'</b><span>'+esc(e.timeNeeded)+'</span></div><p>'+esc(e.description)+'</p><div class="xhow"><b>Cómo verlo:</b> '+esc(e.howToVisit)+'</div></div>';}).join('');
       return '<div class="xgroup"><div class="xday">Día '+day+' · '+esc(di.date)+' — '+esc(di.title)+'</div><div class="xcards">'+cards+'</div></div>';
     });
-    var xhalf=Math.ceil(xGroups.length/2);
-    [xGroups.slice(0,xhalf).join(''), xGroups.slice(xhalf).join('')].forEach(function(html,pi){
-      if(!html) return;
-      P("",'<div class="eyebrow">08 · Paradas opcionales</div><h1 class="sec-title">'+(pi===0?'Extras para sumar a la ruta':'Paradas opcionales · continuación')+'</h1><div class="divider"></div>'+html+footer('Paradas opcionales'));
-    });
+    P("",'<div class="eyebrow">08 · Paradas opcionales</div><h1 class="sec-title">Extras para sumar a la ruta</h1><div class="divider"></div>'+xGroups.join('')+footer('Paradas opcionales'));
   }
 
   P("",'<div class="eyebrow">09 · Videos</div><h1 class="sec-title">Míralo antes de vivirlo</h1><div class="divider"></div>'+
